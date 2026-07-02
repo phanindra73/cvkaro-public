@@ -56,8 +56,8 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess, defaultMode 
 
         {/* Brand visual banner */}
         <div className="bg-navy-dark px-6 py-8 text-white relative text-center">
-          <div className="inline-flex bg-brand-green text-white p-2 rounded-xl mb-3 items-center justify-center">
-            <Sparkles className="h-5 w-5" />
+          <div className="inline-flex bg-brand-green text-white h-9 w-9 rounded-xl mb-3 items-center justify-center">
+            <span className="text-lg font-bold font-display">C</span>
           </div>
           <h4 className="text-2xl font-display font-bold">
             {mode === "login" ? "Welcome Back to CVKaro" : "Create Your CVKaro Account"}
