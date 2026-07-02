@@ -1,0 +1,6 @@
+{
+  "name": "CVKaro",
+  "description": "A professional resume building, ATS score analyzer, skill gap identifier, and personalized learning paths platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
