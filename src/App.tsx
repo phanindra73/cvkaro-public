@@ -197,11 +197,8 @@ export default function App() {
             {/* Brand column */}
             <div className="md:col-span-5 space-y-4">
               <div className="flex items-center gap-2">
-                <div className="bg-brand-green text-white p-1.5 rounded-lg flex items-center justify-center">
-                  <Sparkles className="h-4.5 w-4.5" />
-                </div>
                 <span className="font-display text-2xl font-bold tracking-tight text-white">
-                  CV<span className="text-brand-green">Karo</span>
+                  Career Workspace
                 </span>
               </div>
               
@@ -265,7 +262,7 @@ export default function App() {
           {/* Bottom attribution copyright */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
             <div>
-              &copy; {new Date().getFullYear()} CVKaro Powered By The Sun Technologies. All rights reserved.
+              &copy; {new Date().getFullYear()} Powered By The Sun Technologies. All rights reserved.
             </div>
             
             <div className="flex items-center gap-1">

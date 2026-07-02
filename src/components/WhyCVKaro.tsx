@@ -39,10 +39,10 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16" id="why-cvkaro-header">
           <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-3">Value Proposition</h2>
           <h3 className="text-3xl sm:text-4xl font-display font-bold text-navy-dark tracking-tight mb-4">
-            Why Choose CVKaro?
+            Why Choose Our Platform?
           </h3>
           <p className="text-base sm:text-lg text-text-muted">
-            Standard resumes fail modern digital checkpoints. CVKaro is built from the ground up to empower developers, engineers, and creatives with AI tools designed to impress systems and human recruiters alike.
+            Standard resumes fail modern digital checkpoints. Our platform is built from the ground up to empower developers, engineers, and creatives with AI tools designed to impress systems and human recruiters alike.
           </p>
         </div>
 
@@ -55,11 +55,7 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
             >
               <div className="bg-brand-green/10 text-brand-green p-3 rounded-xl w-fit mb-5 transition-colors duration-300 group-hover:bg-brand-green group-hover:text-navy-dark shrink-0">
                 <div className="group-hover:scale-110 transition-transform duration-300">
-                  {index === 0 ? (
-                    <img src="/logo_main.png" alt="Logo" className="h-6 w-6 object-contain" referrerPolicy="no-referrer" />
-                  ) : (
-                    getIcon(item.icon, "h-6 w-6 text-inherit")
-                  )}
+                  {getIcon(item.icon, "h-6 w-6 text-inherit")}
                 </div>
               </div>
               <h4 className="text-lg font-display font-bold text-navy-dark mb-2 group-hover:text-brand-green transition-colors">
@@ -87,7 +83,7 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
                 Designed to bypass automated filters and maximize callbacks
               </h4>
               <p className="text-white/75 text-sm sm:text-base leading-relaxed mb-6">
-                Over 98% of Fortune 500 companies utilize an Applicant Tracking System. Without proper keyword density and semantic structures, high-quality resumes are filtered out before reaching hiring managers. CVKaro balances exact science with professional layout design.
+                Over 98% of Fortune 500 companies utilize an Applicant Tracking System. Without proper keyword density and semantic structures, high-quality resumes are filtered out before reaching hiring managers. Our system balances exact science with professional layout design.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

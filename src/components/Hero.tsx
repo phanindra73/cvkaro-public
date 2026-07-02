@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle, ShieldCheck, Sparkles } from "lucide-react";
-import cvkaroImage from "../assets/images/cv_dashboard_mockup_1782972982879.jpg";
+import cvkaroImage from "../assets/images/cvkaro_hero_dashboard_1782885654270.jpg";
 
 interface HeroProps {
   onGetStartedClick: () => void;
@@ -24,7 +24,6 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
             
             {/* Elegant brand pill */}
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-green/10 text-brand-green rounded-full text-xs font-semibold tracking-wide w-fit mb-6 animate-fade-in">
-              <img src="/logo_main.png" alt="Logo" className="h-4 w-auto" referrerPolicy="no-referrer" />
               <span>Next-Gen AI Career Companion</span>
             </div>
 
@@ -37,7 +36,7 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
 
             {/* Supporting text */}
             <p className="text-base sm:text-lg text-text-muted leading-relaxed mb-8 max-w-xl font-roboto text-justify">
-              Create ATS-friendly resumes, identify skill gaps, receive personalized AI learning paths, and prepare for your next career opportunity with CVKaro.
+              Create ATS-friendly resumes, identify skill gaps, receive personalized AI learning paths, and prepare for your next career opportunity.
             </p>
 
             {/* CTAs */}
@@ -83,7 +82,7 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
               <div className="relative bg-white rounded-2xl p-2 sm:p-3 shadow-xl border border-border-gray overflow-hidden">
                 <img
                   src={cvkaroImage}
-                  alt="CVKaro Interactive ATS Score Dashboard"
+                  alt="Interactive ATS Score Dashboard"
                   className="w-full h-auto rounded-xl object-cover"
                   referrerPolicy="no-referrer"
                   onError={(e) => {
