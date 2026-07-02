@@ -113,12 +113,9 @@ export default function Header({
             <img
               src="/logo_main.png"
               alt="CVKaro Logo"
-              className="h-9 w-auto object-contain group-hover:scale-105 transition-all duration-300"
+              className="h-10 w-auto object-contain group-hover:scale-105 transition-all duration-300"
               referrerPolicy="no-referrer"
             />
-            <span className="font-display text-xl font-bold text-white tracking-tight group-hover:text-brand-green transition-colors duration-200">
-              CV<span className="text-brand-green">Karo</span>
-            </span>
           </a>
 
           {/* Center: Desktop Navigation */}
