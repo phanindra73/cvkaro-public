@@ -124,12 +124,24 @@ export default function CareerPilotChatbot() {
         }),
       });
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.details || errorData.error || "Failed to communicate with CareerPilot.");
+      let data: any = null;
+      const contentType = response.headers.get("content-type");
+      if (contentType && contentType.includes("application/json")) {
+        try {
+          data = await response.json();
+        } catch (parseErr) {
+          console.error("Error parsing JSON response:", parseErr);
+        }
       }
 
-      const data = await response.json();
+      if (!response.ok) {
+        const errorMsg = data?.details || data?.error || `Server responded with HTTP ${response.status}: ${response.statusText}`;
+        throw new Error(errorMsg);
+      }
+
+      if (!data || !data.reply) {
+        throw new Error("No response content was received from CareerPilot.");
+      }
 
       const botMessage: Message = {
         id: `bot-${Date.now()}`,
