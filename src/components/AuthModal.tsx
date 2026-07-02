@@ -62,7 +62,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess, defaultMode 
           <h4 className="text-2xl font-display font-bold">
             {mode === "login" ? "Welcome Back to CVKaro" : "Create Your CVKaro Account"}
           </h4>
-          <p className="text-xs text-white/70 mt-2 text-justify leading-relaxed">
+          <p className="text-xs text-white/70 mt-2 text-center leading-relaxed">
             {mode === "login" 
               ? "Sign in to access your saved resumes and learning paths." 
               : "Start building ATS-proof resumes and analyzing your skills today."}
