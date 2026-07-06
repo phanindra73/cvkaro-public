@@ -36,7 +36,7 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Meet the Founder Section */}
-        <div className="mb-20 sm:mb-28 bg-white rounded-3xl p-8 sm:p-12 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-border-gray/50 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 relative overflow-hidden">
+        <div className="mb-8 sm:mb-12 bg-white rounded-3xl p-8 sm:p-12 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-border-gray/50 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 relative overflow-hidden">
           {/* Decorative element */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-brand-green/5 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
           
@@ -59,6 +59,32 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
               </p>
               <p>
                 Inspired by these experiences, he founded CVKaro—an AI-powered career platform designed to help students, job seekers, and professionals build ATS-friendly resumes, identify skill gaps, receive personalized learning recommendations, and confidently prepare for their next career opportunity. CVKaro is proudly developed and powered by The Sun Technologies, combining decades of educational excellence with the power of Artificial Intelligence to shape the future of career development.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Meet the Co-Founder Section */}
+        <div className="mb-20 sm:mb-28 bg-white rounded-3xl p-8 sm:p-12 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-border-gray/50 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 relative overflow-hidden">
+          {/* Decorative element */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-brand-green/5 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
+          
+          <div className="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left relative z-10">
+            <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-brand-green/10 text-brand-green flex items-center justify-center mb-6 overflow-hidden border-4 border-white shadow-md">
+              <img src="/co-founder.jpeg" alt="Santhi Swaroopa Vakati" className="w-full h-full object-cover" />
+            </div>
+            <h3 className="text-2xl font-display font-bold text-navy-dark">Santhi Swaroopa Vakati</h3>
+            <p className="text-brand-green font-medium mt-1">Co-Founder – CVKaro</p>
+          </div>
+          
+          <div className="w-full md:w-2/3 flex flex-col justify-center h-full relative z-10 pt-2 md:pt-4">
+            <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-4 text-center md:text-left">Meet the Co-Founder</h2>
+            <div className="space-y-4 text-text-muted text-base sm:text-lg leading-relaxed">
+              <p>
+                Santhi Swaroopa Vakati is the Co-Founder of CVKaro and a B.Tech graduate in Computer Science & Engineering (AI & ML). She was mentored and trained at The Sun Technologies for over four years, gaining practical exposure to software technologies, product development, and real-world problem solving.
+              </p>
+              <p>
+                As a founding member of CVKaro, she contributes to product strategy, business operations, and user experience, working alongside the leadership team to build an AI-powered career platform that empowers students, job seekers, and professionals.
               </p>
             </div>
           </div>
