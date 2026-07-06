@@ -35,6 +35,32 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
+        {/* Meet the Founder Section */}
+        <div className="mb-20 sm:mb-28 bg-white rounded-3xl p-8 sm:p-12 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-border-gray/50 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 relative overflow-hidden">
+          {/* Decorative element */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-brand-green/5 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
+          
+          <div className="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left relative z-10">
+            <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-brand-green/10 text-brand-green flex items-center justify-center mb-6 overflow-hidden border-4 border-white shadow-md">
+              <span className="text-4xl sm:text-5xl font-display font-bold">PO</span>
+            </div>
+            <h3 className="text-2xl font-display font-bold text-navy-dark">Phanindra Oruganti</h3>
+            <p className="text-brand-green font-medium mt-1">Founder & Product Owner – CVKaro</p>
+          </div>
+          
+          <div className="w-full md:w-2/3 flex flex-col justify-center h-full relative z-10 pt-2 md:pt-4">
+            <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-4 text-center md:text-left">Meet the Founder</h2>
+            <div className="space-y-4 text-text-muted text-base sm:text-lg leading-relaxed">
+              <p>
+                Phanindra Oruganti is the Founder of CVKaro and the driving force behind its vision of empowering careers through AI. With over 25 years of experience in software training and technical education, he has mentored and trained 10,000+ students and professionals, helping many build successful careers in the IT industry.
+              </p>
+              <p>
+                His extensive experience inspired the creation of CVKaro—an AI-powered platform designed to simplify career preparation through intelligent resume building, skill-gap analysis, personalized learning paths, and career guidance.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16" id="why-cvkaro-header">
           <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-3">Value Proposition</h2>
