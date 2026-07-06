@@ -36,19 +36,15 @@ export default function SurveySection() {
             ))}
           </div>
           
-          <div className="w-full mt-10 rounded-xl overflow-hidden bg-light-bg flex justify-center border border-border-gray/30">
-            <iframe 
-              src="https://docs.google.com/forms/d/e/1FAIpQLSdWjGBH4P2xIZ4WzB6XkrOkMZrnhy0e2alPLu7lJBcMO2QvNA/viewform?embedded=true" 
-              width="100%" 
-              height="800" 
-              frameBorder="0" 
-              marginHeight={0} 
-              marginWidth={0}
-              title="CVKaro Survey"
-            >
-              Loading…
-            </iframe>
-          </div>
+          <a
+            href="https://forms.gle/FDJqq9PG93RLAmot7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-brand-green text-navy-dark px-8 py-4 rounded-xl text-lg font-bold hover:brightness-110 shadow-lg shadow-brand-green/20 transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+          >
+            Take the Survey
+            <ArrowRight className="w-5 h-5" />
+          </a>
           
         </div>
       </div>
