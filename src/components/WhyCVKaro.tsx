@@ -42,7 +42,7 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
           
           <div className="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left relative z-10">
             <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-brand-green/10 text-brand-green flex items-center justify-center mb-6 overflow-hidden border-4 border-white shadow-md">
-              <span className="text-4xl sm:text-5xl font-display font-bold">PO</span>
+              <img src="/founder.jpg" alt="Phanindra Oruganti" className="w-full h-full object-cover" />
             </div>
             <h3 className="text-2xl font-display font-bold text-navy-dark">Phanindra Oruganti</h3>
             <p className="text-brand-green font-medium mt-1">Founder & Product Owner – CVKaro</p>
