@@ -14,6 +14,7 @@ import Contact from "./components/Contact";
 import AuthModal from "./components/AuthModal";
 import Dashboard from "./components/Dashboard";
 import CareerPilotChatbot from "./components/CareerPilotChatbot";
+import SurveySection from "./components/SurveySection";
 
 export default function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -175,6 +176,9 @@ export default function App() {
 
           {/* FAQs Accordions */}
           <FAQs />
+
+          {/* Pre-launch Survey */}
+          <SurveySection />
 
           {/* Contact Support Form */}
           <Contact />
