@@ -154,6 +154,9 @@ export default function App() {
           {/* Hero Section */}
           <Hero onGetStartedClick={handleGetStartedClick} />
 
+          {/* Pre-launch Survey */}
+          <SurveySection />
+
           {/* Why CVKaro (Value Pros) */}
           <WhyCVKaro onLearnMoreClick={handleGetStartedClick} />
 
@@ -176,9 +179,6 @@ export default function App() {
 
           {/* FAQs Accordions */}
           <FAQs />
-
-          {/* Pre-launch Survey */}
-          <SurveySection />
 
           {/* Contact Support Form */}
           <Contact />
