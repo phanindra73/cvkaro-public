@@ -52,10 +52,13 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
             <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-4 text-center md:text-left">Meet the Founder</h2>
             <div className="space-y-4 text-text-muted text-base sm:text-lg leading-relaxed">
               <p>
-                Phanindra Oruganti is the Founder of CVKaro and the driving force behind its vision of empowering careers through AI. With over 25 years of experience in software training and technical education, he has mentored and trained 10,000+ students and professionals, helping many build successful careers in the IT industry.
+                For more than 25 years, Phanindra Oruganti has been passionate about helping individuals build successful careers in the IT industry. As the Founder of The Sun Technologies, established in 2001, he has dedicated his career to providing quality software training, mentoring aspiring professionals, and preparing them for industry success.
               </p>
               <p>
-                His extensive experience inspired the creation of CVKaro—an AI-powered platform designed to simplify career preparation through intelligent resume building, skill-gap analysis, personalized learning paths, and career guidance.
+                Over the years, he has trained and mentored 10,000+ students and professionals, gaining deep insights into the evolving challenges of career preparation and recruitment.
+              </p>
+              <p>
+                Inspired by these experiences, he founded CVKaro—an AI-powered career platform designed to help students, job seekers, and professionals build ATS-friendly resumes, identify skill gaps, receive personalized learning recommendations, and confidently prepare for their next career opportunity. CVKaro is proudly developed and powered by The Sun Technologies, combining decades of educational excellence with the power of Artificial Intelligence to shape the future of career development.
               </p>
             </div>
           </div>
