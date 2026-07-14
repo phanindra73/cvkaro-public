@@ -29,9 +29,9 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-navy-dark leading-[1.1] tracking-tight mb-6">
-              Build Smarter Resumes. <br />
-              <span className="text-brand-green">Improve Your Skills.</span> <br />
-              Get Hired Faster.
+              One Platform. <br />
+              <span className="text-brand-green">Every Career Move.</span> <br />
+              Powered by AI.
             </h1>
 
             {/* Supporting text */}
