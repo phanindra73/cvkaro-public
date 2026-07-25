@@ -2,6 +2,21 @@ import { FeatureItem, PricingTier, BlogArticle, FAQItem, ResumeAnalysisResult } 
 
 export const WHY_ITEMS = [
   {
+    title: "AI Career Discovery",
+    description: "Discover the right career path based on your interests, strengths, skills, and aspirations using AI-powered career intelligence.",
+    icon: "Search"
+  },
+  {
+    title: "Customer Ikigai Framework",
+    description: "Identify your purpose by aligning what you love, what you're good at, market needs, and career opportunities.",
+    icon: "Target"
+  },
+  {
+    title: "Career Intelligence Profile",
+    description: "Build a personalized Career Intelligence Profile that evolves with your skills, learning, and career journey.",
+    icon: "UserCircle"
+  },
+  {
     title: "AI Resume Builder",
     description: "Build an industry-optimized resume in minutes with real-time AI suggestions, perfect vocabulary tuning, and live design rendering.",
     icon: "Sparkles"

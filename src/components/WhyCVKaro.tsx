@@ -1,5 +1,5 @@
 import React from "react";
-import { Sparkles, UploadCloud, Gauge, Activity, Compass, ShieldCheck, Check } from "lucide-react";
+import { Sparkles, UploadCloud, Gauge, Activity, Compass, ShieldCheck, Check, Search, Target, UserCircle } from "lucide-react";
 import { WHY_ITEMS } from "../data";
 
 interface WhyCVKaroProps {
@@ -23,6 +23,12 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
         return <Compass className={className} />;
       case "ShieldCheck":
         return <ShieldCheck className={className} />;
+      case "Search":
+        return <Search className={className} />;
+      case "Target":
+        return <Target className={className} />;
+      case "UserCircle":
+        return <UserCircle className={className} />;
       default:
         return <Sparkles className={className} />;
     }
