@@ -18,32 +18,32 @@ export const WHY_ITEMS = [
   },
   {
     title: "AI Resume Builder",
-    description: "Build an industry-optimized resume in minutes with real-time AI suggestions, perfect vocabulary tuning, and live design rendering.",
+    description: "Create professional, ATS-friendly resumes with AI-powered suggestions tailored to your career goals and industry expectations.",
     icon: "Sparkles"
   },
   {
     title: "Resume Upload",
-    description: "Drop your existing PDF/Word resume to instantly parse content, assess structure, and extract structured experience metrics.",
+    description: "Upload your existing resume to receive intelligent analysis, structured insights, and personalized recommendations for improvement.",
     icon: "UploadCloud"
   },
   {
     title: "ATS Analysis",
-    description: "Scan your resume against thousands of Applicant Tracking Systems (ATS) rules. Get a definitive benchmark score instantly.",
+    description: "Evaluate your resume against ATS standards and improve your chances of getting shortlisted by top employers.",
     icon: "Gauge"
   },
   {
     title: "Job Description Gap Analysis",
-    description: "Paste any job description and let AI pinpoint exact keywords, critical hard skills, and experience markers missing from your resume.",
+    description: "Compare your resume with job requirements to identify missing skills, keywords, and experience needed for your target role.",
     icon: "Activity"
   },
   {
     title: "Personalized Learning Path",
-    description: "Bridges your skill gap by generating custom, step-by-step career upskilling paths linked directly to reputable online courses.",
+    description: "Receive a personalized AI learning roadmap designed to bridge skill gaps and accelerate your career growth.",
     icon: "Compass"
   },
   {
     title: "Secure Cloud Storage",
-    description: "Access and iterate on your documents anywhere. Every change is auto-saved safely with banking-grade, encrypted cloud backups.",
+    description: "Securely store and manage your career documents with encrypted cloud storage, accessible anytime from anywhere.",
     icon: "ShieldCheck"
   }
 ];
