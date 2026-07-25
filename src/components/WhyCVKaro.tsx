@@ -103,7 +103,7 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
             Why Choose Our Platform?
           </h3>
           <p className="text-base sm:text-lg text-text-muted">
-            Standard resumes fail modern digital checkpoints. Our platform is built from the ground up to empower developers, engineers, and creatives with AI tools designed to impress systems and human recruiters alike.
+            Go beyond resume building with AI-powered Career Intelligence. Discover the right career path, build job-ready skills, optimize your resume, and receive personalized guidance at every stage of your career journey.
           </p>
         </div>
 
