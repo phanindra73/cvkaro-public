@@ -36,7 +36,7 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
 
             {/* Supporting text */}
             <p className="text-base sm:text-lg text-text-muted leading-relaxed mb-8 max-w-xl font-roboto text-justify">
-              Create ATS-friendly resumes, identify skill gaps, receive personalized AI learning paths, and prepare for your next career opportunity.
+              Discover your ideal career path, understand your strengths, bridge skill gaps, and achieve career success with personalized AI-powered Career Intelligence.
             </p>
 
             {/* CTAs */}
