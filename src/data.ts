@@ -79,31 +79,31 @@ export const FEATURE_HIGHLIGHTS: FeatureItem[] = [
   {
     id: "feat-1",
     title: "Resume Builder",
-    description: "A drag-and-drop builder with modern, ATS-proof templates that guarantee recruiters can read your qualifications clearly.",
+    description: "Create professional, ATS-friendly resumes with AI-powered suggestions tailored to your career goals.",
     iconName: "FileText"
   },
   {
     id: "feat-2",
     title: "Resume Upload",
-    description: "Lightning-fast secure parsing that understands complicated multi-column PDF layouts and turns them into editable data.",
+    description: "Upload your resume to receive intelligent analysis and personalized recommendations for improvement.",
     iconName: "UploadCloud"
   },
   {
     id: "feat-3",
-    title: "ATS Score",
-    description: "A granular scoring breakdown out of 100 assessing file type compatibility, heading structures, date formats, and active verbs.",
+    title: "ATS Resume Analysis",
+    description: "Evaluate your resume against ATS standards and improve your chances of getting shortlisted.",
     iconName: "CheckCircle"
   },
   {
     id: "feat-4",
-    title: "Gap Analysis",
-    description: "A dual-column visual comparison showing exactly what keywords the job description requires versus what is currently in your CV.",
+    title: "Job Description Gap Analysis",
+    description: "Compare your resume with job requirements to identify missing skills and experience.",
     iconName: "BarChart3"
   },
   {
     id: "feat-5",
     title: "Learning Path",
-    description: "Tailored micro-learning steps complete with estimated study hours, project definitions, and curated learning materials.",
+    description: "Receive a personalized AI learning roadmap to bridge skill gaps and accelerate career growth.",
     iconName: "Compass"
   }
 ];
