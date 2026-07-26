@@ -102,9 +102,19 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
           <h3 className="text-3xl sm:text-4xl font-display font-bold text-navy-dark tracking-tight mb-4">
             Why Choose Our Platform?
           </h3>
-          <p className="text-base sm:text-lg text-text-muted">
-            Go beyond resume building with AI-powered Career Intelligence. Discover the right career path, build job-ready skills, optimize your resume, and receive personalized guidance at every stage of your career journey.
-          </p>
+          <div className="flex flex-col items-center justify-center gap-2 mt-8 max-w-xs mx-auto">
+            <div className="bg-white w-full py-3 px-4 rounded-xl border border-border-gray/60 shadow-sm text-center font-semibold text-navy-dark">Discover Yourself</div>
+            <div className="text-brand-green font-black">↓</div>
+            <div className="bg-white w-full py-3 px-4 rounded-xl border border-border-gray/60 shadow-sm text-center font-semibold text-navy-dark">Know Your Career</div>
+            <div className="text-brand-green font-black">↓</div>
+            <div className="bg-white w-full py-3 px-4 rounded-xl border border-border-gray/60 shadow-sm text-center font-semibold text-navy-dark">Build Your Resume</div>
+            <div className="text-brand-green font-black">↓</div>
+            <div className="bg-white w-full py-3 px-4 rounded-xl border border-border-gray/60 shadow-sm text-center font-semibold text-navy-dark">Improve Your Skills</div>
+            <div className="text-brand-green font-black">↓</div>
+            <div className="bg-white w-full py-3 px-4 rounded-xl border border-border-gray/60 shadow-sm text-center font-semibold text-navy-dark">Become Job Ready</div>
+            <div className="text-brand-green font-black">↓</div>
+            <div className="bg-brand-green w-full py-3 px-4 rounded-xl border border-brand-green shadow-md text-center font-bold text-white">Achieve Career Success</div>
+          </div>
         </div>
 
         {/* Feature Grid */}
