@@ -109,30 +109,42 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
           </p>
         </div>
 
-        {/* Feature Flow */}
-        <div className="flex overflow-x-auto pb-8 pt-4 gap-4 items-stretch snap-x snap-mandatory mb-12 sm:mb-16 md:mb-20" id="why-cvkaro-grid">
-          {WHY_ITEMS.map((item, index) => (
-            <React.Fragment key={index}>
-              <div className="flex-shrink-0 w-[280px] bg-white rounded-2xl p-6 border border-border-gray/80 hover:border-brand-green/30 hover:shadow-xl transition-all duration-300 group snap-center flex flex-col">
-                <div className="bg-brand-green/10 text-brand-green p-3 rounded-xl w-fit mb-5 transition-colors duration-300 group-hover:bg-brand-green group-hover:text-navy-dark shrink-0">
+        {/* Interconnected Block Process */}
+        <div className="flex flex-col lg:flex-row w-full rounded-2xl shadow-xl border border-border-gray/60 mb-12 sm:mb-16 md:mb-20">
+          {WHY_ITEMS.map((item, index) => {
+            const isLast = index === WHY_ITEMS.length - 1;
+            
+            return (
+              <div 
+                key={index} 
+                className="flex-1 relative bg-white flex flex-col p-6 lg:p-4 xl:p-6 border-b lg:border-b-0 lg:border-r border-border-gray/40 last:border-0 group hover:bg-brand-green/5 transition-colors z-0 hover:z-10"
+              >
+                {/* Desktop Connection Arrow */}
+                {!isLast && (
+                  <div className="hidden lg:block absolute top-1/2 -right-[17px] w-8 h-8 bg-white border-t border-r border-border-gray/40 rotate-45 -translate-y-1/2 z-20 group-hover:bg-[#f2f9f6] transition-colors" />
+                )}
+                
+                {/* Mobile Connection Arrow */}
+                {!isLast && (
+                  <div className="lg:hidden absolute -bottom-[17px] left-1/2 w-8 h-8 bg-white border-b border-r border-border-gray/40 rotate-45 -translate-x-1/2 z-20 group-hover:bg-[#f2f9f6] transition-colors" />
+                )}
+
+                {/* Content */}
+                <div className="bg-brand-green/10 text-brand-green p-2.5 xl:p-3 rounded-xl w-fit mb-4 transition-colors duration-300 group-hover:bg-brand-green group-hover:text-white shrink-0 mx-auto lg:mx-0 relative z-30">
                   <div className="group-hover:scale-110 transition-transform duration-300">
-                    {getIcon(item.icon, "h-6 w-6 text-inherit")}
+                    {getIcon(item.icon, "h-5 w-5 text-inherit")}
                   </div>
                 </div>
-                <h4 className="text-lg font-display font-bold text-navy-dark mb-2 group-hover:text-brand-green transition-colors">
+                
+                <h4 className="text-sm xl:text-base font-display font-bold text-navy-dark mb-2 text-center lg:text-left relative z-30">
                   {item.title}
                 </h4>
-                <p className="text-sm text-text-muted leading-relaxed flex-grow">
+                <p className="text-xs text-text-muted leading-relaxed text-center lg:text-left flex-grow relative z-30">
                   {item.description}
                 </p>
               </div>
-              {index < WHY_ITEMS.length - 1 && (
-                <div className="flex-shrink-0 flex items-center justify-center text-brand-green/40 px-1 md:px-2">
-                  <span className="text-3xl font-black">→</span>
-                </div>
-              )}
-            </React.Fragment>
-          ))}
+            );
+          })}
         </div>
 
         {/* Stats / Highlight Banner */}
