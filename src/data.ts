@@ -2,49 +2,34 @@ import { FeatureItem, PricingTier, BlogArticle, FAQItem, ResumeAnalysisResult } 
 
 export const WHY_ITEMS = [
   {
-    title: "AI Career Discovery",
-    description: "Discover the right career path based on your interests, strengths, skills, and aspirations using AI-powered career intelligence.",
+    title: "Discover Yourself",
+    description: "Uncover your unique strengths, interests, and potential with our AI-driven personality and aptitude assessments.",
     icon: "Search"
   },
   {
-    title: "Customer Ikigai Framework",
-    description: "Identify your purpose by aligning what you love, what you're good at, market needs, and career opportunities.",
-    icon: "Target"
-  },
-  {
-    title: "Career Intelligence Profile",
-    description: "Build a personalized Career Intelligence Profile that evolves with your skills, learning, and career journey.",
-    icon: "UserCircle"
-  },
-  {
-    title: "AI Resume Builder",
-    description: "Create professional, ATS-friendly resumes with AI-powered suggestions tailored to your career goals and industry expectations.",
-    icon: "Sparkles"
-  },
-  {
-    title: "Resume Upload",
-    description: "Upload your existing resume to receive intelligent analysis, structured insights, and personalized recommendations for improvement.",
-    icon: "UploadCloud"
-  },
-  {
-    title: "ATS Analysis",
-    description: "Evaluate your resume against ATS standards and improve your chances of getting shortlisted by top employers.",
-    icon: "Gauge"
-  },
-  {
-    title: "Job Description Gap Analysis",
-    description: "Compare your resume with job requirements to identify missing skills, keywords, and experience needed for your target role.",
-    icon: "Activity"
-  },
-  {
-    title: "Personalized Learning Path",
-    description: "Receive a personalized AI learning roadmap designed to bridge skill gaps and accelerate your career growth.",
+    title: "Know Your Career",
+    description: "Explore personalized career paths and understand the industry landscape to make informed professional decisions.",
     icon: "Compass"
   },
   {
-    title: "Secure Cloud Storage",
-    description: "Securely store and manage your career documents with encrypted cloud storage, accessible anytime from anywhere.",
-    icon: "ShieldCheck"
+    title: "Build Your Resume",
+    description: "Create a professional, ATS-friendly resume that highlights your achievements and stands out to recruiters.",
+    icon: "FileText"
+  },
+  {
+    title: "Improve Your Skills",
+    description: "Receive tailored learning roadmaps to bridge skill gaps and stay competitive in your chosen field.",
+    icon: "Activity"
+  },
+  {
+    title: "Become Job Ready",
+    description: "Prepare for interviews with targeted mock questions, portfolio reviews, and confidence-building exercises.",
+    icon: "Target"
+  },
+  {
+    title: "Achieve Career Success",
+    description: "Land your dream role, continue growing your expertise, and build a lasting, fulfilling career journey.",
+    icon: "Sparkles"
   }
 ];
 

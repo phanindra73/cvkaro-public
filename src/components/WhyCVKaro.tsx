@@ -1,5 +1,5 @@
 import React from "react";
-import { Sparkles, UploadCloud, Gauge, Activity, Compass, ShieldCheck, Check, Search, Target, UserCircle } from "lucide-react";
+import { Sparkles, UploadCloud, Gauge, Activity, Compass, ShieldCheck, Check, Search, Target, UserCircle, FileText } from "lucide-react";
 import { WHY_ITEMS } from "../data";
 
 interface WhyCVKaroProps {
@@ -13,6 +13,8 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
     switch (name) {
       case "Sparkles":
         return <Sparkles className={className} />;
+      case "FileText":
+        return <FileText className={className} />;
       case "UploadCloud":
         return <UploadCloud className={className} />;
       case "Gauge":
@@ -107,25 +109,29 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
           </p>
         </div>
 
-        {/* Feature Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16 md:mb-20" id="why-cvkaro-grid">
+        {/* Feature Flow */}
+        <div className="flex overflow-x-auto pb-8 pt-4 gap-4 items-stretch snap-x snap-mandatory mb-12 sm:mb-16 md:mb-20" id="why-cvkaro-grid">
           {WHY_ITEMS.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl p-6 border border-border-gray/80 hover:border-brand-green/30 hover:shadow-lg transition-all duration-300 group"
-            >
-              <div className="bg-brand-green/10 text-brand-green p-3 rounded-xl w-fit mb-5 transition-colors duration-300 group-hover:bg-brand-green group-hover:text-navy-dark shrink-0">
-                <div className="group-hover:scale-110 transition-transform duration-300">
-                  {getIcon(item.icon, "h-6 w-6 text-inherit")}
+            <React.Fragment key={index}>
+              <div className="flex-shrink-0 w-[280px] bg-white rounded-2xl p-6 border border-border-gray/80 hover:border-brand-green/30 hover:shadow-xl transition-all duration-300 group snap-center flex flex-col">
+                <div className="bg-brand-green/10 text-brand-green p-3 rounded-xl w-fit mb-5 transition-colors duration-300 group-hover:bg-brand-green group-hover:text-navy-dark shrink-0">
+                  <div className="group-hover:scale-110 transition-transform duration-300">
+                    {getIcon(item.icon, "h-6 w-6 text-inherit")}
+                  </div>
                 </div>
+                <h4 className="text-lg font-display font-bold text-navy-dark mb-2 group-hover:text-brand-green transition-colors">
+                  {item.title}
+                </h4>
+                <p className="text-sm text-text-muted leading-relaxed flex-grow">
+                  {item.description}
+                </p>
               </div>
-              <h4 className="text-lg font-display font-bold text-navy-dark mb-2 group-hover:text-brand-green transition-colors">
-                {item.title}
-              </h4>
-              <p className="text-sm text-text-muted leading-relaxed">
-                {item.description}
-              </p>
-            </div>
+              {index < WHY_ITEMS.length - 1 && (
+                <div className="flex-shrink-0 flex items-center justify-center text-brand-green/40 px-1 md:px-2">
+                  <span className="text-3xl font-black">→</span>
+                </div>
+              )}
+            </React.Fragment>
           ))}
         </div>
 
