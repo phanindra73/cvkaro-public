@@ -75,29 +75,7 @@ export default function Features({ onFeatureSelect }: FeaturesProps) {
             </div>
           ))}
 
-          {/* Bonus Bento card to complete the clean symmetrical layout */}
-          <div className="bg-navy-dark text-white rounded-2xl p-8 border border-white/5 md:col-span-2 lg:col-span-1 flex flex-col justify-between relative overflow-hidden group cursor-pointer" onClick={() => onFeatureSelect('career-intelligence')}>
-            <div className="absolute top-0 right-0 w-32 h-32 bg-brand-green/15 rounded-full blur-2xl group-hover:bg-brand-green/25 transition-colors duration-500" />
-            
-            <div>
-              <div className="bg-white/10 p-3 rounded-xl w-fit mb-6 text-brand-green group-hover:scale-110 transition-transform duration-300">
-                <img src="/logo_main.png" alt="Logo" className="h-6 w-6 object-contain" referrerPolicy="no-referrer" />
-              </div>
 
-              <h4 className="text-xl font-display font-bold text-white mb-3 group-hover:text-brand-green transition-colors">
-                Career Intelligence Profile
-              </h4>
-
-              <p className="text-sm text-white/70 leading-relaxed mb-6">
-                Build a personalized Career Intelligence Profile that evolves with your skills, learning, and career journey.
-              </p>
-            </div>
-
-            <div className="flex items-center gap-1.5 text-xs font-semibold text-brand-green group-hover:gap-2.5 transition-all mt-auto pt-2">
-              <span>Learn More</span>
-              <span className="text-sm">→</span>
-            </div>
-          </div>
         </div>
 
       </div>

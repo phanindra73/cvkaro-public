@@ -77,8 +77,14 @@ export const HOW_IT_WORKS_STEPS = [
 
 export const FEATURE_HIGHLIGHTS: FeatureItem[] = [
   {
+    id: "career-intelligence",
+    title: "Career Intelligence Profile",
+    description: "Build a personalized Career Intelligence Profile that evolves with your skills, learning, and career journey.",
+    iconName: "Sparkles"
+  },
+  {
     id: "feat-1",
-    title: "Resume Builder",
+    title: "AI Resume Builder",
     description: "Create professional, ATS-friendly resumes with AI-powered suggestions tailored to your career goals.",
     iconName: "FileText"
   },
