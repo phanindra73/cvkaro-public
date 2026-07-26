@@ -63,7 +63,7 @@ export default function Features({ onFeatureSelect }: FeaturesProps) {
                   {feat.title}
                 </h4>
 
-                <p className="text-sm text-text-muted leading-relaxed mb-6">
+                <p className="text-sm text-text-muted leading-relaxed text-justify mb-6">
                   {feat.description}
                 </p>
               </div>

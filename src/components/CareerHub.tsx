@@ -178,7 +178,7 @@ export default function CareerHub() {
                         </h4>
 
                         {/* Summary description */}
-                        <p className="text-xs text-text-muted leading-relaxed mb-6 line-clamp-3">
+                        <p className="text-xs text-text-muted leading-relaxed text-justify mb-6 line-clamp-3">
                           {article.summary}
                         </p>
                       </div>

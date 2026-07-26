@@ -139,7 +139,7 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
                 <h4 className="text-sm xl:text-base font-display font-bold text-navy-dark mb-2 text-left lg:text-left relative z-30">
                   {item.title}
                 </h4>
-                <p className="text-xs text-text-muted leading-relaxed text-left lg:text-left flex-grow relative z-30">
+                <p className="text-xs text-text-muted leading-relaxed text-justify flex-grow relative z-30">
                   {item.description}
                 </p>
               </div>

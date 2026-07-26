@@ -99,7 +99,7 @@ export default function HowItWorks({ onInteractiveTryClick }: HowItWorksProps) {
                   <h4 className="font-display font-bold text-base mb-1.5 leading-snug">
                     {item.title}
                   </h4>
-                  <p className={`text-xs leading-relaxed ${isCurrent ? "text-white/80" : "text-text-muted"}`}>
+                  <p className={`text-xs leading-relaxed text-justify ${isCurrent ? "text-white/80" : "text-text-muted"}`}>
                     {item.description}
                   </p>
                 </button>
