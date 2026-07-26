@@ -48,7 +48,7 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
           {/* Decorative element */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-brand-green/5 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
           
-          <div className="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left relative z-10">
+          <div className="w-full md:w-1/3 flex flex-col items-center md:items-start text-left md:text-left relative z-10">
             <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-brand-green/10 text-brand-green flex items-center justify-center mb-6 overflow-hidden border-4 border-white shadow-md">
               <img src="/founder.jpg" alt="Phanindra Oruganti" className="w-full h-full object-cover" />
             </div>
@@ -57,7 +57,7 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
           </div>
           
           <div className="w-full md:w-2/3 flex flex-col justify-center h-full relative z-10 pt-2 md:pt-4">
-            <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-4 text-center md:text-left">Meet the Founder</h2>
+            <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-4 text-left md:text-left">Meet the Founder</h2>
             <div className="space-y-4 text-text-muted text-base sm:text-lg leading-relaxed">
               <p>
                 For more than 25 years, Phanindra Oruganti has been passionate about helping individuals build successful careers in the IT industry. As the Founder of The Sun Technologies, established in 2001, he has dedicated his career to providing quality software training, mentoring aspiring professionals, and preparing them for industry success.
@@ -77,7 +77,7 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
           {/* Decorative element */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-brand-green/5 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
           
-          <div className="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left relative z-10">
+          <div className="w-full md:w-1/3 flex flex-col items-center md:items-start text-left md:text-left relative z-10">
             <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-brand-green/10 text-brand-green flex items-center justify-center mb-6 overflow-hidden border-4 border-white shadow-md">
               <img src="/co-founder.jpeg" alt="Santhi Swaroopa Vakati" className="w-full h-full object-cover object-[50%_35%]" />
             </div>
@@ -86,7 +86,7 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
           </div>
           
           <div className="w-full md:w-2/3 flex flex-col justify-center h-full relative z-10 pt-2 md:pt-4">
-            <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-4 text-center md:text-left">Meet the Co-Founder</h2>
+            <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-4 text-left md:text-left">Meet the Co-Founder</h2>
             <div className="space-y-4 text-text-muted text-base sm:text-lg leading-relaxed">
               <p>
                 Santhi Swaroopa Vakati is the Co-Founder of CVKaro and a B.Tech graduate in Computer Science & Engineering (AI & ML). She was mentored and trained at The Sun Technologies for over four years, gaining practical exposure to software technologies, product development, and real-world problem solving.
@@ -99,7 +99,7 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
         </div>
 
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16" id="why-cvkaro-header">
+        <div className="text-left max-w-3xl mx-auto mb-12 sm:mb-16" id="why-cvkaro-header">
           <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-3">Value Proposition</h2>
           <h3 className="text-3xl sm:text-4xl font-display font-bold text-navy-dark tracking-tight mb-4">
             Why Choose Our Platform?
@@ -136,10 +136,10 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
                   </div>
                 </div>
                 
-                <h4 className="text-sm xl:text-base font-display font-bold text-navy-dark mb-2 text-center lg:text-left relative z-30">
+                <h4 className="text-sm xl:text-base font-display font-bold text-navy-dark mb-2 text-left lg:text-left relative z-30">
                   {item.title}
                 </h4>
-                <p className="text-xs text-text-muted leading-relaxed text-center lg:text-left flex-grow relative z-30">
+                <p className="text-xs text-text-muted leading-relaxed text-left lg:text-left flex-grow relative z-30">
                   {item.description}
                 </p>
               </div>
@@ -181,7 +181,7 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
               </div>
             </div>
 
-            <div className="lg:col-span-5 grid grid-cols-2 gap-4 text-center">
+            <div className="lg:col-span-5 grid grid-cols-2 gap-4 text-left">
               <div className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-xs flex flex-col justify-center min-h-[120px]">
                 <div className="text-xl sm:text-2xl font-display font-bold text-brand-green mb-1 leading-tight">
                   Multiple

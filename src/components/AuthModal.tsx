@@ -55,7 +55,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess, defaultMode 
         </button>
 
         {/* Brand visual banner */}
-        <div className="bg-navy-dark px-6 py-8 text-white relative text-center">
+        <div className="bg-navy-dark px-6 py-8 text-white relative text-left">
           <div className="inline-flex bg-brand-green text-white h-9 w-9 rounded-xl mb-3 items-center justify-center animate-pulse-zoom">
             <span className="text-lg font-bold font-display">C</span>
           </div>
@@ -72,7 +72,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess, defaultMode 
         {/* Form area */}
         <div className="p-6 sm:p-8">
           {success ? (
-            <div className="py-8 text-center animate-scale-up">
+            <div className="py-8 text-left animate-scale-up">
               <div className="inline-flex items-center justify-center bg-green-100 text-brand-green p-4 rounded-full mb-4">
                 <CheckCircle2 className="h-10 w-10" />
               </div>
@@ -172,7 +172,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess, defaultMode 
               </button>
 
               {/* Mode Switcher */}
-              <div className="text-center mt-6 text-xs text-text-muted border-t border-border-gray/55 pt-4">
+              <div className="text-left mt-6 text-xs text-text-muted border-t border-border-gray/55 pt-4">
                 {mode === "login" ? (
                   <span>
                     New to CVKaro?{" "}

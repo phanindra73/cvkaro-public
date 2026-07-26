@@ -44,14 +44,14 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
               <button
                 onClick={onGetStartedClick}
                 id="btn-hero-cta"
-                className="px-8 py-4 text-center font-bold text-navy-dark bg-brand-green hover:brightness-110 rounded-xl shadow-lg shadow-brand-green/20 transition-all duration-300 hover:-translate-y-1 cursor-pointer flex items-center justify-center gap-2"
+                className="px-8 py-4 text-left font-bold text-navy-dark bg-brand-green hover:brightness-110 rounded-xl shadow-lg shadow-brand-green/20 transition-all duration-300 hover:-translate-y-1 cursor-pointer flex items-center justify-center gap-2"
               >
                 Get Started Free
                 <span className="text-lg">→</span>
               </button>
               <a
                 href="#features"
-                className="px-6 py-4 text-center font-semibold text-navy-dark hover:text-brand-green bg-light-bg hover:bg-border-gray/35 rounded-xl transition-all duration-300 flex items-center justify-center"
+                className="px-6 py-4 text-left font-semibold text-navy-dark hover:text-brand-green bg-light-bg hover:bg-border-gray/35 rounded-xl transition-all duration-300 flex items-center justify-center"
               >
                 Explore Features
               </a>

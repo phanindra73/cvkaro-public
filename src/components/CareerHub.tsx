@@ -104,7 +104,7 @@ export default function CareerHub() {
           <div>
             
             {/* Section Header */}
-            <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16" id="blog-header">
+            <div className="text-left max-w-3xl mx-auto mb-12 sm:mb-16" id="blog-header">
               <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-3">Resource Center</h2>
               <h3 className="text-3xl sm:text-4xl font-display font-bold text-navy-dark tracking-tight mb-4">
                 CVKaro Career Hub
@@ -214,7 +214,7 @@ export default function CareerHub() {
                 ))}
               </div>
             ) : (
-              <div className="text-center py-12 bg-white rounded-2xl border border-border-gray" id="blog-empty">
+              <div className="text-left py-12 bg-white rounded-2xl border border-border-gray" id="blog-empty">
                 <BookOpen className="h-10 w-10 text-text-muted mx-auto mb-3 animate-pulse" />
                 <h4 className="font-display font-semibold text-lg text-navy-dark mb-1">
                   No Articles Found

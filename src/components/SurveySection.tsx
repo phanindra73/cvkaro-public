@@ -8,17 +8,17 @@ export default function SurveySection() {
       <div className="absolute bottom-0 left-0 w-[40%] h-[400px] bg-blue-50 rounded-full blur-3xl opacity-50 translate-y-1/2" />
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="bg-white rounded-[2rem] p-8 md:p-12 shadow-xl border border-border-gray/50 text-center">
+        <div className="bg-white rounded-[2rem] p-8 md:p-12 shadow-xl border border-border-gray/50 text-left">
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-navy-dark mb-6 tracking-tight">
             Help Shape the Future of <span className="text-brand-green">CVKaro</span>
           </h2>
           
-          <p className="text-lg md:text-xl text-text-muted mb-6 leading-relaxed max-w-2xl mx-auto text-justify sm:text-center">
+          <p className="text-lg md:text-xl text-text-muted mb-6 leading-relaxed max-w-2xl mx-auto text-justify sm:text-left">
             We're building CVKaro, an AI-powered career platform designed to help students, job seekers, and professionals succeed in their careers.
           </p>
           
-          <p className="text-base md:text-lg text-text-muted mb-10 max-w-2xl mx-auto text-justify sm:text-center">
+          <p className="text-base md:text-lg text-text-muted mb-10 max-w-2xl mx-auto text-justify sm:text-left">
             Before we launch, we want to understand the real challenges people face and build solutions that truly make a difference. By taking our 5–7 minute survey, you'll help us:
           </p>
           

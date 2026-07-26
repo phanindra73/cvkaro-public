@@ -21,7 +21,7 @@ export default function FAQs() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16" id="faqs-header">
+        <div className="text-left max-w-3xl mx-auto mb-12 sm:mb-16" id="faqs-header">
           <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-3">Questions & Answers</h2>
           <h3 className="text-3xl sm:text-4xl font-display font-bold text-navy-dark tracking-tight mb-4">
             Frequently Asked Questions
@@ -95,7 +95,7 @@ export default function FAQs() {
 
         {/* Still have questions card prompt */}
         <div className="mt-12 bg-light-bg border border-border-gray rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="text-center sm:text-left">
+          <div className="text-left sm:text-left">
             <h4 className="font-display font-bold text-navy-dark text-lg mb-1">
               Still have queries?
             </h4>

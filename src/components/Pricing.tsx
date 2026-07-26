@@ -50,7 +50,7 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16" id="pricing-header">
+        <div className="text-left max-w-3xl mx-auto mb-12 sm:mb-16" id="pricing-header">
           <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-3">Transparent Plans</h2>
           <h3 className="text-3xl sm:text-4xl font-display font-bold text-navy-dark tracking-tight mb-4">
             Pricing Plans for Every Career Stage
@@ -183,7 +183,7 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
         </div>
 
         {/* Informative bottom footer */}
-        <div className="text-center" id="pricing-guarantee">
+        <div className="text-left" id="pricing-guarantee">
           <p className="text-xs text-text-muted inline-flex items-center gap-1.5 bg-light-bg px-4 py-2 rounded-full border border-border-gray/60">
             <Info className="h-4 w-4 text-brand-green shrink-0" />
             Have questions about billing? universities and nonprofits can email us at
@@ -220,7 +220,7 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
             {/* Modal Content */}
             <div className="p-6">
               {checkoutComplete ? (
-                <div className="py-8 text-center animate-scale-up">
+                <div className="py-8 text-left animate-scale-up">
                   <div className="inline-flex items-center justify-center bg-green-100 text-brand-green p-4 rounded-full mb-4">
                     <CheckCircle2 className="h-10 w-10" />
                   </div>
@@ -315,7 +315,7 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
                     </button>
                   </div>
                   
-                  <p className="text-[10px] text-text-muted text-center italic">
+                  <p className="text-[10px] text-text-muted text-left italic">
                     Note: This is a secure sandbox transaction simulation. No real money will be charged.
                   </p>
                 </form>

@@ -217,7 +217,7 @@ ${bEdu}`;
                 {/* Simulated Drag and drop */}
                 <div 
                   onClick={handleDropSimulation}
-                  className="border-2 border-dashed border-border-gray hover:border-brand-green bg-light-bg/55 hover:bg-brand-green/3 p-6 rounded-xl text-center cursor-pointer transition-colors mb-4 group relative"
+                  className="border-2 border-dashed border-border-gray hover:border-brand-green bg-light-bg/55 hover:bg-brand-green/3 p-6 rounded-xl text-left cursor-pointer transition-colors mb-4 group relative"
                 >
                   <UploadCloud className="h-8 w-8 text-text-muted mx-auto mb-2 group-hover:scale-110 group-hover:text-brand-green transition-all" />
                   <span className="text-xs font-semibold text-navy-dark block">
@@ -291,7 +291,7 @@ ${bEdu}`;
               <button
                 onClick={handleAnalyze}
                 disabled={isAnalyzing}
-                className="w-full py-4 text-center font-bold text-navy-dark bg-brand-green hover:brightness-110 rounded-xl shadow-lg shadow-brand-green/10 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2"
+                className="w-full py-4 text-left font-bold text-navy-dark bg-brand-green hover:brightness-110 rounded-xl shadow-lg shadow-brand-green/10 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2"
               >
                 {isAnalyzing ? (
                   <>
@@ -311,7 +311,7 @@ ${bEdu}`;
             {/* Results Output column */}
             <div className="lg:col-span-7">
               {isAnalyzing ? (
-                <div className="bg-white rounded-2xl border border-border-gray p-12 text-center shadow-sm flex flex-col justify-center items-center h-full min-h-[500px]">
+                <div className="bg-white rounded-2xl border border-border-gray p-12 text-left shadow-sm flex flex-col justify-center items-center h-full min-h-[500px]">
                   <div className="relative mb-6">
                     <div className="h-16 w-16 rounded-full border-4 border-brand-green/20 border-t-brand-green animate-spin" />
                     <Sparkles className="h-6 w-6 text-brand-green absolute inset-0 m-auto animate-bounce" />
@@ -346,7 +346,7 @@ ${bEdu}`;
                               strokeLinecap="round"
                             />
                           </svg>
-                          <div className="text-center">
+                          <div className="text-left">
                             <span className="text-3xl font-display font-extrabold text-navy-dark">
                               {analysisResult.score}
                             </span>
@@ -377,15 +377,15 @@ ${bEdu}`;
 
                     {/* Sub-scores metrics columns */}
                     <div className="grid grid-cols-3 gap-4 mt-8 border-t border-border-gray pt-6">
-                      <div className="text-center">
+                      <div className="text-left">
                         <div className="text-xs font-bold text-text-muted uppercase mb-1">Layout & Formats</div>
                         <div className="text-lg font-display font-bold text-navy-dark">{analysisResult.formattingScore}%</div>
                       </div>
-                      <div className="text-center border-x border-border-gray">
+                      <div className="text-left border-x border-border-gray">
                         <div className="text-xs font-bold text-text-muted uppercase mb-1">Readability</div>
                         <div className="text-lg font-display font-bold text-navy-dark">{analysisResult.readabilityScore}%</div>
                       </div>
-                      <div className="text-center">
+                      <div className="text-left">
                         <div className="text-xs font-bold text-text-muted uppercase mb-1">Impact & Numbers</div>
                         <div className="text-lg font-display font-bold text-navy-dark">{analysisResult.impactScore}%</div>
                       </div>
@@ -470,7 +470,7 @@ ${bEdu}`;
 
                 </div>
               ) : (
-                <div className="bg-white rounded-2xl border border-border-gray p-12 text-center shadow-sm flex flex-col justify-center items-center h-full min-h-[500px]">
+                <div className="bg-white rounded-2xl border border-border-gray p-12 text-left shadow-sm flex flex-col justify-center items-center h-full min-h-[500px]">
                   <div className="bg-brand-green/10 text-brand-green p-4 rounded-full mb-4">
                     <Sparkles className="h-8 w-8" />
                   </div>
