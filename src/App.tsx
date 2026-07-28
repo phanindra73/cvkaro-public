@@ -7,7 +7,7 @@ import Hero from "./components/Hero";
 import WhyFirstJobMatters from "./components/WhyFirstJobMatters";
 import WhyChooseCVKaro from "./components/WhyChooseCVKaro";
 import WhyCVKaro from "./components/WhyCVKaro";
-import CareerRoadmap from "./components/CareerRoadmap";
+import CareerDiscoverySteps from "./components/CareerDiscoverySteps";
 
 
 import Features from "./components/Features";
@@ -164,8 +164,8 @@ export default function App() {
           {/* Why Choose CVKaro Section */}
           <WhyChooseCVKaro onGetStartedClick={handleGetStartedClick} />
 
-          {/* Career Roadmap Timeline */}
-          <CareerRoadmap onGetStartedClick={handleGetStartedClick} />
+          {/* Career Discovery Steps */}
+          <CareerDiscoverySteps onGetStartedClick={handleGetStartedClick} />
 
           {/* Why CVKaro (Value Pros) */}
           <WhyCVKaro onLearnMoreClick={handleGetStartedClick} />
