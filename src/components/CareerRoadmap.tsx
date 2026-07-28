@@ -1,7 +1,11 @@
 import React from 'react';
-import { CheckCircle2, Clock, Target } from 'lucide-react';
+import { CheckCircle2, Clock, Target, ArrowRight } from 'lucide-react';
 
-export default function CareerRoadmap() {
+interface Props {
+  onGetStartedClick?: () => void;
+}
+
+export default function CareerRoadmap({ onGetStartedClick }: Props) {
   const steps = [
     { icon: "🧭", title: "Career Discovery", status: "Available Today", statusType: "available" },
     { icon: "🧠", title: "Career Intelligence Profile", status: "Coming Soon", statusType: "upcoming" },
@@ -81,6 +85,20 @@ export default function CareerRoadmap() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="mt-16 sm:mt-20 text-center flex flex-col items-center">
+          <p className="text-xl font-bold text-navy-dark mb-6">
+            Your journey starts with one simple step.
+          </p>
+          <button
+            onClick={onGetStartedClick}
+            className="px-8 py-4 font-bold text-navy-dark bg-brand-green hover:brightness-110 rounded-xl shadow-lg shadow-brand-green/20 transition-all duration-300 hover:-translate-y-1 cursor-pointer flex items-center justify-center gap-2"
+          >
+            Start Career Discovery
+            <ArrowRight className="w-5 h-5" />
+          </button>
         </div>
       </div>
     </section>

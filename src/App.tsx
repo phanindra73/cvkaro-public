@@ -164,11 +164,11 @@ export default function App() {
           {/* Why Choose CVKaro Section */}
           <WhyChooseCVKaro onGetStartedClick={handleGetStartedClick} />
 
+          {/* Career Roadmap Timeline */}
+          <CareerRoadmap onGetStartedClick={handleGetStartedClick} />
+
           {/* Why CVKaro (Value Pros) */}
           <WhyCVKaro onLearnMoreClick={handleGetStartedClick} />
-
-          {/* Career Roadmap Timeline */}
-          <CareerRoadmap />
 
           {/* Feature Highlights bento cards */}
           <Features onFeatureSelect={handleFeatureSelect} />
