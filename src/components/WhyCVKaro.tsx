@@ -51,7 +51,7 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
                 <p>
                   For more than 25 years, I've mentored thousands of students entering the IT industry. Many were talented and hardworking, yet they struggled to answer three important questions:
                 </p>
-                <ul className="list-disc list-inside space-y-2 ml-2 text-navy-dark/80 font-medium">
+                <ul className="list-disc list-inside space-y-2 ml-2 text-text-muted font-medium">
                   <li>Which career is right for me?</li>
                   <li>What skills do I need?</li>
                   <li>How do I become job-ready?</li>
