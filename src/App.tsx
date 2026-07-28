@@ -4,8 +4,8 @@ import {
 } from "lucide-react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import WhyCVKaro from "./components/WhyCVKaro";
-import HowItWorks from "./components/HowItWorks";
+
+
 import Features from "./components/Features";
 import Pricing from "./components/Pricing";
 import CareerHub from "./components/CareerHub";
@@ -155,14 +155,10 @@ export default function App() {
           <Hero onGetStartedClick={handleGetStartedClick} />
 
 
-          {/* Why CVKaro (Value Pros) */}
-          <WhyCVKaro onLearnMoreClick={handleGetStartedClick} />
 
           {/* Feature Highlights bento cards */}
           <Features onFeatureSelect={handleFeatureSelect} />
 
-          {/* How It Works active step timeline */}
-          <HowItWorks onInteractiveTryClick={handleGetStartedClick} />
 
           {/* Transparent Pricing Cards */}
           <Pricing onPlanSelect={(plan) => {
