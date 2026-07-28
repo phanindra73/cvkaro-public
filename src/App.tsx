@@ -5,6 +5,7 @@ import {
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import WhyFirstJobMatters from "./components/WhyFirstJobMatters";
+import WhyChooseCVKaro from "./components/WhyChooseCVKaro";
 import WhyCVKaro from "./components/WhyCVKaro";
 
 
@@ -158,6 +159,9 @@ export default function App() {
 
           {/* Why First Job Matters Section */}
           <WhyFirstJobMatters onGetStartedClick={handleGetStartedClick} />
+
+          {/* Why Choose CVKaro Section */}
+          <WhyChooseCVKaro />
 
           {/* Why CVKaro (Value Pros) */}
           <WhyCVKaro onLearnMoreClick={handleGetStartedClick} />
