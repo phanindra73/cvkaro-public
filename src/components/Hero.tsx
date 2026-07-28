@@ -24,7 +24,7 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
             
             {/* Elegant brand pill */}
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-green/10 text-brand-green rounded-full text-xs font-semibold tracking-wide w-fit mb-6 animate-fade-in">
-              <span>Next-Gen AI Career Companion</span>
+              <span>AI-Powered Career Discovery</span>
             </div>
 
             {/* Headline */}
@@ -35,8 +35,7 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
 
             {/* Supporting text */}
             <p className="text-base sm:text-lg text-text-muted leading-relaxed mb-8 max-w-xl font-roboto text-justify">
-              The first job you choose influences your skills, confidence, salary growth, and future opportunities.<br />
-              Don't settle for just any job. Choose the career that's right for you.
+              Choosing your first job is one of the most important decisions you'll make. Discover the right career path, understand your strengths, and prepare with confidence through AI-powered Career Discovery.
             </p>
 
             {/* CTAs */}
@@ -46,14 +45,14 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
                 id="btn-hero-cta"
                 className="px-8 py-4 text-left font-bold text-navy-dark bg-brand-green hover:brightness-110 rounded-xl shadow-lg shadow-brand-green/20 transition-all duration-300 hover:-translate-y-1 cursor-pointer flex items-center justify-center gap-2"
               >
-                Get Started Free
+                Start Career Discovery
                 <span className="text-lg">→</span>
               </button>
               <a
                 href="#features"
                 className="px-6 py-4 text-left font-semibold text-navy-dark hover:text-brand-green bg-light-bg hover:bg-border-gray/35 rounded-xl transition-all duration-300 flex items-center justify-center"
               >
-                Explore Features
+                See How It Works
               </a>
             </div>
 
