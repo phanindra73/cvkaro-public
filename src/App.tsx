@@ -4,6 +4,7 @@ import {
 } from "lucide-react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import WhyFirstJobMatters from "./components/WhyFirstJobMatters";
 import WhyCVKaro from "./components/WhyCVKaro";
 
 
@@ -154,6 +155,9 @@ export default function App() {
         <main className="flex-grow">
           {/* Hero Section */}
           <Hero onGetStartedClick={handleGetStartedClick} />
+
+          {/* Why First Job Matters Section */}
+          <WhyFirstJobMatters onGetStartedClick={handleGetStartedClick} />
 
           {/* Why CVKaro (Value Pros) */}
           <WhyCVKaro onLearnMoreClick={handleGetStartedClick} />
