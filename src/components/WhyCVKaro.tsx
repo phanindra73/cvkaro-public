@@ -82,7 +82,7 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
               <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-4">Turning Vision into Reality</h2>
               <div className="space-y-4 text-text-muted text-base sm:text-lg leading-relaxed">
                 <p>
-                  Santhi plays a key role in transforming the vision of CVKaro into a practical AI-powered platform. From product research and user experience to testing and continuous improvement, she focuses on creating a platform that is simple, intuitive, and valuable for students and graduates beginning their careers.
+                  As a recent B.Tech graduate, Santhi represents the voice of the students and fresh graduates that CVKaro is designed to support. She contributes to product research, user experience, feature validation, testing, and continuous improvement, ensuring the platform delivers a simple, practical, and meaningful career guidance experience for every user.
                 </p>
               </div>
             </div>
