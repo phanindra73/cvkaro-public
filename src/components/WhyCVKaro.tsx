@@ -21,7 +21,7 @@ export default function WhyCVKaro({ onLearnMoreClick }: WhyCVKaroProps) {
             Built by Educators. Driven by a Mission.
           </h3>
           <p className="text-lg sm:text-xl text-text-muted leading-relaxed">
-            For over 25 years, we've worked closely with students and graduates, helping them build successful careers. Along the way, we discovered a common challenge—not a lack of talent, but a lack of career clarity.
+            For over 25 years, I have worked closely with students and professionals, helping them build successful careers in the IT industry. Throughout this journey, I observed a common challenge—not a lack of talent, but a lack of career clarity.
             <br/><br/>
             That's why we built CVKaro.
           </p>
