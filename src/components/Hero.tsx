@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle, ShieldCheck, Sparkles } from "lucide-react";
-import cvkaroImage from "../assets/images/cvkaro_hero_dashboard_1782885654270.jpg";
+import cvkaroImage from "../assets/images/cv_dashboard_mockup_1782972982879.jpg";
 
 interface HeroProps {
   onGetStartedClick: () => void;
@@ -81,7 +81,7 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
               <div className="relative bg-white rounded-2xl p-2 sm:p-3 shadow-xl border border-border-gray overflow-hidden">
                 <img
                   src={cvkaroImage}
-                  alt="Interactive ATS Score Dashboard"
+                  alt="AI-Powered Career Discovery Dashboard"
                   className="w-full h-auto rounded-xl object-cover"
                   referrerPolicy="no-referrer"
                   onError={(e) => {
@@ -89,17 +89,6 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
                     (e.target as HTMLImageElement).src = "https://picsum.photos/seed/dashboard/800/500";
                   }}
                 />
-
-                {/* Floating micro metrics */}
-                <div className="absolute bottom-6 left-6 bg-navy-dark text-white p-3.5 rounded-xl flex items-center gap-3 shadow-2xl border border-white/10 animate-pulse">
-                  <div className="bg-brand-green/20 p-2 rounded-lg text-brand-green">
-                    <CheckCircle className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <div className="text-[10px] text-white/60 font-semibold uppercase tracking-wider">Overall Match</div>
-                    <div className="font-display font-bold text-lg text-brand-green">85% Compliance</div>
-                  </div>
-                </div>
 
               </div>
             </div>
