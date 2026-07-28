@@ -4,6 +4,7 @@ import {
 } from "lucide-react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import WhyCVKaro from "./components/WhyCVKaro";
 
 
 import Features from "./components/Features";
@@ -154,7 +155,8 @@ export default function App() {
           {/* Hero Section */}
           <Hero onGetStartedClick={handleGetStartedClick} />
 
-
+          {/* Why CVKaro (Value Pros) */}
+          <WhyCVKaro onLearnMoreClick={handleGetStartedClick} />
 
           {/* Feature Highlights bento cards */}
           <Features onFeatureSelect={handleFeatureSelect} />
