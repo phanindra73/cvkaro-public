@@ -74,23 +74,18 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
           <div className="lg:col-span-6 flex items-center justify-center" id="hero-right-content">
             <div className="relative w-full max-w-lg lg:max-w-none">
               
-              {/* Background gradient decorative card shadow */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-brand-green to-emerald-400 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition duration-1000" />
-              
               {/* Main Image */}
-              <div className="relative bg-white rounded-2xl p-2 sm:p-3 shadow-xl border border-border-gray overflow-hidden">
-                <img
-                  src="/heroimage.png"
-                  alt="AI-Powered Career Discovery Dashboard"
-                  className="w-full h-auto rounded-xl object-cover"
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    // Fallback to picsum if local image generation is missing or fails
-                    (e.target as HTMLImageElement).src = "https://picsum.photos/seed/dashboard/800/500";
-                  }}
-                />
-
-              </div>
+              <img
+                src="/heroimage.png"
+                alt="AI-Powered Career Discovery Dashboard"
+                className="w-full h-auto object-cover"
+                referrerPolicy="no-referrer"
+                onError={(e) => {
+                  // Fallback to picsum if local image generation is missing or fails
+                  (e.target as HTMLImageElement).src = "https://picsum.photos/seed/dashboard/800/500";
+                }}
+              />
+              
             </div>
           </div>
 
