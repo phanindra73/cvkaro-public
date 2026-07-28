@@ -56,17 +56,7 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
               </a>
             </div>
 
-            {/* Trust factors */}
-            <div className="grid grid-cols-2 gap-4 border-t border-border-gray/60 pt-6 max-w-md">
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-brand-green shrink-0" />
-                <span className="text-xs font-medium text-dark-gray">ATS-Proof Check list</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-brand-green shrink-0" />
-                <span className="text-xs font-medium text-dark-gray">No Credit Card Required</span>
-              </div>
-            </div>
+
 
           </div>
 
