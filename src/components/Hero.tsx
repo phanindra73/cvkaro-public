@@ -29,14 +29,14 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-navy-dark leading-[1.1] tracking-tight mb-6">
-              From Career Discovery <br />
-              <span className="text-brand-green">To Career Success.</span> <br />
-              Powered by AI.
+              Your First Job Can Shape the Rest of Your Career. <br />
+              <span className="text-brand-green">Make It Your Best One.</span>
             </h1>
 
             {/* Supporting text */}
             <p className="text-base sm:text-lg text-text-muted leading-relaxed mb-8 max-w-xl font-roboto text-justify">
-              Discover your ideal career path, understand your strengths, bridge skill gaps, and achieve career success with personalized AI-powered Career Intelligence.
+              The first job you choose influences your skills, confidence, salary growth, and future opportunities.<br />
+              Don't settle for just any job. Choose the career that's right for you.
             </p>
 
             {/* CTAs */}

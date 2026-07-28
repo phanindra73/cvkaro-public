@@ -14,7 +14,7 @@ import Contact from "./components/Contact";
 import AuthModal from "./components/AuthModal";
 import Dashboard from "./components/Dashboard";
 import CareerPilotChatbot from "./components/CareerPilotChatbot";
-import SurveySection from "./components/SurveySection";
+
 
 export default function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -154,8 +154,6 @@ export default function App() {
           {/* Hero Section */}
           <Hero onGetStartedClick={handleGetStartedClick} />
 
-          {/* Pre-launch Survey */}
-          <SurveySection />
 
           {/* Why CVKaro (Value Pros) */}
           <WhyCVKaro onLearnMoreClick={handleGetStartedClick} />
