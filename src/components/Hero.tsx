@@ -76,7 +76,7 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
               
               {/* Main Image */}
               <img
-                src="/heroimage.png"
+                src="/heroimage.png?v=2"
                 alt="AI-Powered Career Discovery Dashboard"
                 className="w-full h-auto object-cover"
                 referrerPolicy="no-referrer"
