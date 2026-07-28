@@ -1,7 +1,11 @@
 import React from 'react';
-import { Compass, User, Target, Lightbulb, Rocket, TrendingUp } from 'lucide-react';
+import { Compass, User, Target, Lightbulb, Rocket, TrendingUp, ArrowRight } from 'lucide-react';
 
-export default function WhyChooseCVKaro() {
+interface Props {
+  onGetStartedClick: () => void;
+}
+
+export default function WhyChooseCVKaro({ onGetStartedClick }: Props) {
   const cards = [
     {
       title: "Discover the Right Career",
@@ -67,6 +71,16 @@ export default function WhyChooseCVKaro() {
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="flex justify-center mt-12 sm:mt-16">
+          <button
+            onClick={onGetStartedClick}
+            className="px-8 py-4 font-bold text-navy-dark bg-brand-green hover:brightness-110 rounded-xl shadow-lg shadow-brand-green/20 transition-all duration-300 hover:-translate-y-1 cursor-pointer flex items-center justify-center gap-2"
+          >
+            Start Career Discovery
+            <ArrowRight className="w-5 h-5" />
+          </button>
         </div>
       </div>
     </section>

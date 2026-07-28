@@ -161,7 +161,7 @@ export default function App() {
           <WhyFirstJobMatters onGetStartedClick={handleGetStartedClick} />
 
           {/* Why Choose CVKaro Section */}
-          <WhyChooseCVKaro />
+          <WhyChooseCVKaro onGetStartedClick={handleGetStartedClick} />
 
           {/* Why CVKaro (Value Pros) */}
           <WhyCVKaro onLearnMoreClick={handleGetStartedClick} />
