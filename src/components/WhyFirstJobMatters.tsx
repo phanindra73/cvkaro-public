@@ -23,8 +23,7 @@ export default function WhyFirstJobMatters({ onGetStartedClick }: Props) {
             Why Your First Job Matters
           </h2>
           <p className="text-lg sm:text-xl text-text-muted leading-relaxed max-w-2xl mx-auto">
-            Your first job isn't just your first paycheck. <br className="hidden sm:block" />
-            <span className="font-semibold text-navy-dark/90">It's the beginning of your career journey.</span>
+            Your first job isn't just your first paycheck. It's the beginning of your career journey.
           </p>
         </div>
 
