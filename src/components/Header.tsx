@@ -75,18 +75,28 @@ export default function Header({
     document.body.style.overflow = "unset";
     setIsOpen(false);
     
-    // Smooth scroll directly to the target element without blocking or delays
-    const element = document.querySelector(href);
-    if (element) {
-      const offset = 80; // height of the sticky header
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
+    if (onNavigateHome) {
+      onNavigateHome();
     }
+    
+    // Wait for React to render the homepage if we are coming from the Privacy Policy page
+    setTimeout(() => {
+      if (href === "#home") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        return;
+      }
+      const element = document.querySelector(href);
+      if (element) {
+        const offset = 80; // height of the sticky header
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    }, 50);
   };
 
   return (
@@ -107,7 +117,6 @@ export default function Header({
             href="#home"
             onClick={(e) => {
               e.preventDefault();
-              if (onNavigateHome) onNavigateHome();
               handleNavClick("#home");
             }}
             className="flex items-center gap-1 group cursor-pointer"
@@ -132,7 +141,6 @@ export default function Header({
                     href={item.href}
                     onClick={(e) => {
                       e.preventDefault();
-                      if (item.href === "#home" && onNavigateHome) onNavigateHome();
                       handleNavClick(item.href);
                     }}
                     className={`px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 ${
@@ -223,7 +231,6 @@ export default function Header({
                 href={item.href}
                 onClick={(e) => {
                   e.preventDefault();
-                  if (item.href === "#home" && onNavigateHome) onNavigateHome();
                   handleNavClick(item.href);
                 }}
                 className={`flex items-center px-4 py-3 rounded-lg font-semibold text-base transition-all ${
