@@ -215,12 +215,12 @@ export default function App() {
               <div className="flex items-center gap-2">
                 <img src="/logo_main.png" alt="CVKaro Logo" className="h-8 w-auto object-contain" referrerPolicy="no-referrer" />
                 <span className="font-display text-2xl font-bold tracking-tight text-white">
-                  Career Workspace
+                  CVKaro – Career Intelligence Platform
                 </span>
               </div>
               
               <p className="text-white/60 text-xs leading-relaxed max-w-sm">
-                Optimizing global engineering and technical talent checkpoints. Build beautiful layouts, parse with exact compliant criteria, close skill gaps, and land your next career destination.
+                Empowering students and fresh graduates to discover the right career, build future-ready skills, and confidently prepare for their first job through AI-powered Career Intelligence.
               </p>
               
               <div className="flex items-center gap-3 text-white/40">
@@ -235,20 +235,23 @@ export default function App() {
 
             {/* Links column 1 */}
             <div className="md:col-span-3 space-y-3">
-              <h5 className="text-xs font-bold text-brand-green uppercase tracking-wider">Product Scope</h5>
+              <h5 className="text-xs font-bold text-brand-green uppercase tracking-wider">PLATFORM</h5>
               <ul className="space-y-2 text-xs text-white/70">
-                <li><a href="#home" onClick={(e) => { e.preventDefault(); scrollToId("home"); }} className="hover:text-white transition-colors">Resume Score Builder</a></li>
-                <li><a href="#features" onClick={(e) => { e.preventDefault(); scrollToId("features"); }} className="hover:text-white transition-colors">ATS Format Checkers</a></li>
-                <li><a href="#pricing" onClick={(e) => { e.preventDefault(); scrollToId("pricing"); }} className="hover:text-white transition-colors">Enterprise Pricing plans</a></li>
-                <li><a href="#career-hub" onClick={(e) => { e.preventDefault(); scrollToId("career-hub"); }} className="hover:text-white transition-colors">Personal Career Advisor</a></li>
+                <li><a href="#home" onClick={(e) => { e.preventDefault(); scrollToId("home"); }} className="hover:text-white transition-colors">Career Discovery</a></li>
+                <li><a href="#features" onClick={(e) => { e.preventDefault(); scrollToId("features"); }} className="hover:text-white transition-colors">Career Intelligence Profile</a></li>
+                <li><a href="#home" onClick={(e) => { e.preventDefault(); scrollToId("home"); }} className="hover:text-white transition-colors">AI Resume Builder</a></li>
+                <li><a href="#features" onClick={(e) => { e.preventDefault(); scrollToId("features"); }} className="hover:text-white transition-colors">Resume Intelligence</a></li>
+                <li><a href="#features" onClick={(e) => { e.preventDefault(); scrollToId("features"); }} className="hover:text-white transition-colors">ATS Resume Analysis</a></li>
+                <li><a href="#features" onClick={(e) => { e.preventDefault(); scrollToId("features"); }} className="hover:text-white transition-colors">Skill Gap Analysis</a></li>
+                <li><a href="#career-hub" onClick={(e) => { e.preventDefault(); scrollToId("career-hub"); }} className="hover:text-white transition-colors">AI Learning Path</a></li>
               </ul>
             </div>
 
             {/* Links column 2 */}
             <div className="md:col-span-4 space-y-4">
-              <h5 className="text-xs font-bold text-brand-green uppercase tracking-wider">Join Career Newsletter</h5>
+              <h5 className="text-xs font-bold text-brand-green uppercase tracking-wider">JOIN OUR COMMUNITY</h5>
               <p className="text-xs text-white/60 leading-relaxed">
-                Stay updated with weekly resume tips and upskilling guidelines curated by lead tech recruiters.
+                Stay updated with career insights, AI-powered guidance, learning resources, product updates, and exclusive early access to new features.
               </p>
               
               <form 
@@ -263,14 +266,14 @@ export default function App() {
                 <input
                   type="email"
                   required
-                  placeholder="Enter email..."
+                  placeholder="Enter your email address"
                   className="bg-white/5 border border-white/10 text-white placeholder-white/40 px-3 py-2 text-xs rounded-lg focus:outline-hidden focus:border-brand-green w-full"
                 />
                 <button
                   type="submit"
-                  className="px-3.5 py-2 text-xs font-semibold bg-brand-green hover:bg-brand-green/90 rounded-lg text-white shrink-0 cursor-pointer"
+                  className="px-3.5 py-2 text-xs font-semibold bg-brand-green hover:bg-brand-green/90 rounded-lg text-white shrink-0 cursor-pointer whitespace-nowrap"
                 >
-                  Join
+                  Join Free
                 </button>
               </form>
             </div>
@@ -279,12 +282,15 @@ export default function App() {
           {/* Bottom attribution copyright */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
             <div>
-              &copy; {new Date().getFullYear()} Powered By The Sun Technologies. All rights reserved.
+              &copy; 2026 CVKaro – Career Intelligence Platform. All rights reserved.
             </div>
             
-            <div className="flex items-center gap-1">
-              <span>Designed to build careers, not just resumes.</span>
-              <Heart className="h-3 w-3 text-brand-green fill-brand-green shrink-0 animate-pulse" />
+            <div className="flex items-center gap-4 flex-wrap justify-center">
+              <a href="#privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+              <span>|</span>
+              <a href="#terms" className="hover:text-white transition-colors">Terms of Service</a>
+              <span>|</span>
+              <a href="#contact" className="hover:text-white transition-colors">Contact Us</a>
             </div>
           </div>
 
