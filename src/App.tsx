@@ -19,10 +19,12 @@ import Contact from "./components/Contact";
 import AuthModal from "./components/AuthModal";
 import Dashboard from "./components/Dashboard";
 import CareerPilotChatbot from "./components/CareerPilotChatbot";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 
 export default function App() {
   const [activeSection, setActiveSection] = useState("home");
+  const [currentPage, setCurrentPage] = useState<"home" | "privacy">("home");
   
   // Auth states
   const [authModalOpen, setAuthModalOpen] = useState(false);
@@ -141,9 +143,14 @@ export default function App() {
         activeSection={activeSection}
         isLoggedIn={isLoggedIn}
         onLogout={handleLogout}
+        onNavigateHome={() => setCurrentPage("home")}
       />
 
-      {isLoggedIn ? (
+      {currentPage === "privacy" ? (
+        <main className="flex-grow">
+          <PrivacyPolicy />
+        </main>
+      ) : isLoggedIn ? (
         /* Logged In View - Shows interactive dashboard at the top */
         <main className="flex-grow">
           <Dashboard
@@ -222,15 +229,7 @@ export default function App() {
               <p className="text-white/60 text-xs leading-relaxed max-w-sm">
                 Empowering students and fresh graduates to discover the right career, build future-ready skills, and confidently prepare for their first job through AI-powered Career Intelligence.
               </p>
-              
-              <div className="flex items-center gap-3 text-white/40">
-                <a href="#github" onClick={(e) => e.preventDefault()} className="hover:text-brand-green transition-colors">
-                  <Github className="h-4.5 w-4.5" />
-                </a>
-                <a href="#mail" onClick={(e) => e.preventDefault()} className="hover:text-brand-green transition-colors">
-                  <Mail className="h-4.5 w-4.5" />
-                </a>
-              </div>
+
             </div>
 
             {/* Links column 1 */}
@@ -286,7 +285,7 @@ export default function App() {
             </div>
             
             <div className="flex items-center gap-4 flex-wrap justify-center">
-              <a href="#privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#privacy" onClick={(e) => { e.preventDefault(); setCurrentPage("privacy"); window.scrollTo(0,0); }} className="hover:text-white transition-colors">Privacy Policy</a>
               <span>|</span>
               <a href="#terms" className="hover:text-white transition-colors">Terms of Service</a>
               <span>|</span>

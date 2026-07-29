@@ -7,6 +7,7 @@ interface HeaderProps {
   activeSection: string;
   isLoggedIn?: boolean;
   onLogout?: () => void;
+  onNavigateHome?: () => void;
 }
 
 export default function Header({ 
@@ -14,7 +15,8 @@ export default function Header({
   onGetStartedClick, 
   activeSection,
   isLoggedIn = false,
-  onLogout
+  onLogout,
+  onNavigateHome
 }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -105,6 +107,7 @@ export default function Header({
             href="#home"
             onClick={(e) => {
               e.preventDefault();
+              if (onNavigateHome) onNavigateHome();
               handleNavClick("#home");
             }}
             className="flex items-center gap-1 group cursor-pointer"
@@ -129,6 +132,7 @@ export default function Header({
                     href={item.href}
                     onClick={(e) => {
                       e.preventDefault();
+                      if (item.href === "#home" && onNavigateHome) onNavigateHome();
                       handleNavClick(item.href);
                     }}
                     className={`px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 ${
@@ -219,6 +223,7 @@ export default function Header({
                 href={item.href}
                 onClick={(e) => {
                   e.preventDefault();
+                  if (item.href === "#home" && onNavigateHome) onNavigateHome();
                   handleNavClick(item.href);
                 }}
                 className={`flex items-center px-4 py-3 rounded-lg font-semibold text-base transition-all ${
