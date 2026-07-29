@@ -19,6 +19,9 @@ export default function WhyFirstJobMatters({ onGetStartedClick }: Props) {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
+          <div className="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-wider text-brand-green uppercase bg-brand-green/10 rounded-full border border-brand-green/20">
+            Career Foundation
+          </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-navy-dark mb-6 tracking-tight">
             Why Your First Job Matters
           </h2>
