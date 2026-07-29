@@ -34,8 +34,10 @@ export default function Features({ onFeatureSelect }: FeaturesProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-left max-w-3xl mx-auto mb-12 sm:mb-16" id="features-header">
-          <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-3">PLATFORM FEATURES</h2>
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16" id="features-header">
+          <div className="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-wider text-brand-green uppercase bg-brand-green/10 rounded-full border border-brand-green/20">
+            PLATFORM FEATURES
+          </div>
           <h3 className="text-3xl sm:text-4xl font-display font-bold text-navy-dark tracking-tight mb-4">
             Everything You Need to Build a Successful Career
           </h3>
