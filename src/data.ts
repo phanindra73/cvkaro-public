@@ -64,37 +64,37 @@ export const FEATURE_HIGHLIGHTS: FeatureItem[] = [
   {
     id: "career-intelligence",
     title: "Career Intelligence Profile",
-    description: "Build a personalized Career Intelligence Profile that evolves with your skills, learning, and career journey.",
+    description: "Create your personalized Career Intelligence Profile to understand your strengths, career goals, skills, and growth journey.",
     iconName: "Sparkles"
   },
   {
     id: "feat-1",
     title: "AI Resume Builder",
-    description: "Create professional, ATS-friendly resumes with AI-powered suggestions tailored to your career goals.",
+    description: "Build a professional, ATS-friendly resume tailored to your career aspirations with AI guidance.",
     iconName: "FileText"
   },
   {
     id: "feat-2",
-    title: "Resume Upload",
-    description: "Upload your resume to receive intelligent analysis and personalized recommendations for improvement.",
+    title: "Resume Intelligence",
+    description: "Upload your resume and receive AI-powered insights to improve quality, structure, and job readiness.",
     iconName: "UploadCloud"
   },
   {
     id: "feat-3",
     title: "ATS Resume Analysis",
-    description: "Evaluate your resume against ATS standards and improve your chances of getting shortlisted.",
+    description: "Evaluate your resume against ATS standards and identify improvements to increase interview opportunities.",
     iconName: "CheckCircle"
   },
   {
     id: "feat-4",
-    title: "Job Description Gap Analysis",
-    description: "Compare your resume with job requirements to identify missing skills and experience.",
+    title: "Skill Gap Analysis",
+    description: "Compare your skills with job requirements and discover what you need to learn to become job-ready.",
     iconName: "BarChart3"
   },
   {
     id: "feat-5",
-    title: "Learning Path",
-    description: "Receive a personalized AI learning roadmap to bridge skill gaps and accelerate career growth.",
+    title: "AI Learning Path",
+    description: "Receive a personalized learning roadmap to bridge skill gaps and prepare for your target career.",
     iconName: "Compass"
   }
 ];

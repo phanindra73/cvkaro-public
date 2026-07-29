@@ -35,12 +35,12 @@ export default function Features({ onFeatureSelect }: FeaturesProps) {
         
         {/* Section Header */}
         <div className="text-left max-w-3xl mx-auto mb-12 sm:mb-16" id="features-header">
-          <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-3">Key Highlights</h2>
+          <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-3">PLATFORM FEATURES</h2>
           <h3 className="text-3xl sm:text-4xl font-display font-bold text-navy-dark tracking-tight mb-4">
-            Feature Highlights
+            Everything You Need to Build a Successful Career
           </h3>
           <p className="text-base sm:text-lg text-text-muted">
-            Everything you need to discover your career, improve your employability, and achieve career success—all in one AI-powered platform.
+            From discovering the right career to building a professional resume, improving your skills, and preparing for job opportunities, CVKaro brings everything together in one AI-powered Career Intelligence Platform.
           </p>
         </div>
 
