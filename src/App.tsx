@@ -20,11 +20,12 @@ import AuthModal from "./components/AuthModal";
 import Dashboard from "./components/Dashboard";
 import CareerPilotChatbot from "./components/CareerPilotChatbot";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsOfService from "./components/TermsOfService";
 
 
 export default function App() {
   const [activeSection, setActiveSection] = useState("home");
-  const [currentPage, setCurrentPage] = useState<"home" | "privacy">("home");
+  const [currentPage, setCurrentPage] = useState<"home" | "privacy" | "terms">("home");
   
   // Auth states
   const [authModalOpen, setAuthModalOpen] = useState(false);
@@ -149,6 +150,10 @@ export default function App() {
       {currentPage === "privacy" ? (
         <main className="flex-grow">
           <PrivacyPolicy />
+        </main>
+      ) : currentPage === "terms" ? (
+        <main className="flex-grow">
+          <TermsOfService />
         </main>
       ) : isLoggedIn ? (
         /* Logged In View - Shows interactive dashboard at the top */
@@ -287,7 +292,7 @@ export default function App() {
             <div className="flex items-center gap-4 flex-wrap justify-center">
               <a href="#privacy" onClick={(e) => { e.preventDefault(); setCurrentPage("privacy"); window.scrollTo(0,0); }} className="hover:text-white transition-colors">Privacy Policy</a>
               <span>|</span>
-              <a href="#terms" className="hover:text-white transition-colors">Terms of Service</a>
+              <a href="#terms" onClick={(e) => { e.preventDefault(); setCurrentPage("terms"); window.scrollTo(0,0); }} className="hover:text-white transition-colors">Terms of Service</a>
               <span>|</span>
               <a href="#contact" className="hover:text-white transition-colors">Contact Us</a>
             </div>
