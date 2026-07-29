@@ -8,6 +8,7 @@ import WhyFirstJobMatters from "./components/WhyFirstJobMatters";
 import WhyChooseCVKaro from "./components/WhyChooseCVKaro";
 import WhyCVKaro from "./components/WhyCVKaro";
 import CareerDiscoverySteps from "./components/CareerDiscoverySteps";
+import SampleCareerReport from "./components/SampleCareerReport";
 
 
 import Features from "./components/Features";
@@ -166,6 +167,9 @@ export default function App() {
 
           {/* Career Discovery Steps */}
           <CareerDiscoverySteps onGetStartedClick={handleGetStartedClick} />
+
+          {/* Sample Career Discovery Report */}
+          <SampleCareerReport />
 
           {/* Why CVKaro (Value Pros) */}
           <WhyCVKaro onLearnMoreClick={handleGetStartedClick} />
