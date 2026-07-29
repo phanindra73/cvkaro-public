@@ -31,9 +31,12 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
   };
 
   const getPriceDisplay = (tier: PricingTier) => {
+    if (tier.id === "tier-campus") {
+      return { amount: "Contact Sales", period: "" };
+    }
     if (tier.priceMonthly === 0) return { amount: "₹0", period: "" };
     const price = isYearly ? tier.priceYearly : tier.priceMonthly;
-    if (tier.id === "tier-teams") {
+    if (tier.id === "tier-campus") {
       return {
         amount: `₹${price}`,
         period: isYearly ? "/ seat / mo, billed yearly" : "/ seat / mo"
@@ -50,13 +53,15 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-left max-w-3xl mx-auto mb-12 sm:mb-16" id="pricing-header">
-          <h2 className="text-xs font-bold text-brand-green tracking-widest uppercase mb-3">Transparent Plans</h2>
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16" id="pricing-header">
+          <div className="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-wider text-brand-green uppercase bg-brand-green/10 rounded-full border border-brand-green/20">
+            PLANS & PRICING
+          </div>
           <h3 className="text-3xl sm:text-4xl font-display font-bold text-navy-dark tracking-tight mb-4">
-            Pricing Plans for Every Career Stage
+            Choose the Plan That Fits Your Career Goals
           </h3>
           <p className="text-base sm:text-lg text-text-muted">
-            Choose the plan that fits your career goals. Save up to 30% with our discounted yearly billing structures.
+            Start with Career Discovery for free and upgrade as you prepare for internships, placements, and your professional career.
           </p>
 
           {/* Billing Switcher Toggle */}
@@ -128,28 +133,8 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
                   {/* Features List */}
                   <ul className="space-y-3.5 mb-8">
                     {tier.features.map((feature, i) => {
-                      let icon = <Check className="h-4 w-4 text-brand-green shrink-0 mt-0.5" />;
-                      let textClass = "text-text-primary font-medium leading-relaxed";
-
-                      if (tier.id === "tier-free") {
-                        const lowerFeature = feature.toLowerCase();
-                        if (lowerFeature.includes("gap") || lowerFeature.includes("path") || lowerFeature.includes("export") || lowerFeature.includes("support")) {
-                          icon = <X className="h-4 w-4 text-gray-400 shrink-0 mt-0.5" />;
-                          textClass = "text-text-muted/50 font-normal leading-relaxed";
-                        } else if (lowerFeature.includes("scan") || lowerFeature.includes("listing")) {
-                          icon = <AlertTriangle className="h-4 w-4 text-amber-500 shrink-0 mt-0.5" />;
-                          textClass = "text-text-primary font-medium leading-relaxed";
-                        } else {
-                          icon = <Check className="h-4 w-4 text-emerald-500 shrink-0 mt-0.5" />;
-                          textClass = "text-text-primary font-medium leading-relaxed";
-                        }
-                      } else if (tier.id === "tier-pro") {
-                        const lowerFeature = feature.toLowerCase();
-                        if (lowerFeature.includes("support")) {
-                          icon = <X className="h-4 w-4 text-gray-400 shrink-0 mt-0.5" />;
-                          textClass = "text-text-muted/50 font-normal leading-relaxed";
-                        }
-                      }
+                      const icon = <Check className="h-4 w-4 text-brand-green shrink-0 mt-0.5" />;
+                      const textClass = "text-text-primary font-medium leading-relaxed";
 
                       return (
                         <li key={i} className="flex items-start gap-2.5 text-xs">

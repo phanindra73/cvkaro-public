@@ -105,67 +105,64 @@ export const PRICING_TIERS: PricingTier[] = [
     name: "Free",
     priceMonthly: 0,
     priceYearly: 0,
-    description: "Perfect for testing CVKaro's foundational ATS analysis capabilities.",
+    description: "Perfect for students beginning their career journey.",
     features: [
-      "1 resume (basic template)",
-      "ATS score — 1 scan/month",
-      "JD gap analysis",
-      "Learning path",
-      "5 job listings / month",
-      "PDF export",
-      "Priority support"
+      "Career Discovery Assessment",
+      "Career Discovery Report",
+      "Career Intelligence Profile",
+      "Career Recommendations",
+      "Limited AI Career Guidance"
     ],
-    ctaText: "Get Started"
+    ctaText: "Start Free"
+  },
+  {
+    id: "tier-growth",
+    name: "Career Growth",
+    priceMonthly: 299,
+    priceYearly: 199,
+    description: "For students preparing for internships and placements.",
+    features: [
+      "Everything in Free",
+      "AI Resume Builder",
+      "Resume Intelligence",
+      "ATS Resume Analysis",
+      "Skill Gap Analysis",
+      "AI Learning Path",
+      "Career Progress Tracking"
+    ],
+    isPopular: true,
+    ctaText: "Start Career Growth"
   },
   {
     id: "tier-pro",
-    name: "Pro",
-    priceMonthly: 299,
-    priceYearly: 199,
-    description: "The ultimate tool for active job seekers targeting tech and business roles.",
-    features: [
-      "5 resumes + 10 templates",
-      "Unlimited ATS scans",
-      "JD gap analysis — 10/month",
-      "Learning path per skill gap",
-      "Unlimited job listings",
-      "PDF + DOCX export",
-      "Priority support"
-    ],
-    isPopular: true,
-    ctaText: "Upgrade to Pro"
-  },
-  {
-    id: "tier-elite",
-    name: "Elite",
+    name: "Career Pro",
     priceMonthly: 599,
-    priceYearly: 399,
-    description: "Tailored for senior professionals seeking specialized executive coaching.",
+    priceYearly: 499,
+    description: "For serious job seekers and working professionals.",
     features: [
-      "Unlimited resumes + templates",
-      "Unlimited ATS scans",
-      "Unlimited JD gap analysis",
-      "Full learning roadmap + courses",
-      "AI ranked job matching",
-      "LinkedIn profile review",
-      "Priority support"
+      "Everything in Career Growth",
+      "Unlimited AI Analysis",
+      "Job Description Gap Analysis",
+      "Interview Preparation",
+      "AI Career Coach",
+      "Priority Support"
     ],
-    ctaText: "Get Elite Access"
+    ctaText: "Go Pro"
   },
   {
-    id: "tier-teams",
-    name: "Teams (B2B)",
-    priceMonthly: 199,
-    priceYearly: 149,
-    description: "For universities, coding bootcamps, and outplacement agencies.",
+    id: "tier-campus",
+    name: "Campus / Institution",
+    priceMonthly: -1,
+    priceYearly: -1,
+    description: "For colleges and universities.",
     features: [
-      "All Pro features per seat",
-      "Admin dashboard",
-      "Batch resume analysis",
-      "Placement analytics report",
-      "Branded resume templates",
-      "Dedicated account manager",
-      "Custom onboarding"
+      "Student Dashboard",
+      "Institution Dashboard",
+      "Batch Reports",
+      "Placement Analytics",
+      "Career Insights",
+      "Admin Portal",
+      "Dedicated Support"
     ],
     ctaText: "Contact Sales"
   }
