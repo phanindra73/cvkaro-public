@@ -31,9 +31,6 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
   };
 
   const getPriceDisplay = (tier: PricingTier) => {
-    if (tier.id === "tier-campus") {
-      return { amount: "Contact Sales", period: "" };
-    }
     if (tier.priceMonthly === 0) return { amount: "₹0", period: "" };
     const price = isYearly ? tier.priceYearly : tier.priceMonthly;
     if (tier.id === "tier-campus") {

@@ -152,8 +152,8 @@ export const PRICING_TIERS: PricingTier[] = [
   {
     id: "tier-campus",
     name: "Campus / Institution",
-    priceMonthly: -1,
-    priceYearly: -1,
+    priceMonthly: 199,
+    priceYearly: 149,
     description: "For colleges and universities.",
     features: [
       "Student Dashboard",
