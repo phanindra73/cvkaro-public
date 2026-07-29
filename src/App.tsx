@@ -224,11 +224,8 @@ export default function App() {
             
             {/* Brand column */}
             <div className="md:col-span-5 space-y-4">
-              <div className="flex items-center gap-2">
-                <img src="/logo_main.png" alt="CVKaro Logo" className="h-8 w-auto object-contain" referrerPolicy="no-referrer" />
-                <span className="font-display text-2xl font-bold tracking-tight text-white">
-                  CVKaro – Career Intelligence Platform
-                </span>
+              <div className="flex items-center mb-2">
+                <img src="/logo_main.png" alt="CVKaro Logo" className="h-12 md:h-16 w-auto object-contain" referrerPolicy="no-referrer" />
               </div>
               
               <p className="text-white/60 text-xs leading-relaxed max-w-sm">
