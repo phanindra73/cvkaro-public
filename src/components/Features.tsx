@@ -29,7 +29,7 @@ export default function Features({ onFeatureSelect }: FeaturesProps) {
   return (
     <section
       id="features"
-      className="py-12 sm:py-20 md:py-28 bg-light-bg"
+      className="py-20 sm:py-28 bg-light-bg"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
