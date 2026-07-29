@@ -168,8 +168,7 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
         <div className="text-left" id="pricing-guarantee">
           <p className="text-xs text-text-muted inline-flex items-center gap-1.5 bg-light-bg px-4 py-2 rounded-full border border-border-gray/60">
             <Info className="h-4 w-4 text-brand-green shrink-0" />
-            Have questions about billing? universities and nonprofits can email us at
-            <span className="font-semibold text-navy-dark">b2b@cvkaro.com</span>
+            Need help choosing the right plan? Our team is here to guide you.
           </p>
         </div>
 
