@@ -39,17 +39,25 @@ export default function App() {
 
   // Scroll to section helper
   const scrollToId = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = elementPosition - offset;
+    setCurrentPage("home");
+    
+    setTimeout(() => {
+      if (id === "home") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        return;
+      }
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 80;
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - offset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-    }
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    }, 50);
   };
 
   // Sync activeSection with isLoggedIn state changes
@@ -245,6 +253,7 @@ export default function App() {
                 <li><a href="#features" onClick={(e) => { e.preventDefault(); scrollToId("features"); }} className="hover:text-white transition-colors">ATS Resume Analysis</a></li>
                 <li><a href="#features" onClick={(e) => { e.preventDefault(); scrollToId("features"); }} className="hover:text-white transition-colors">Skill Gap Analysis</a></li>
                 <li><a href="#career-hub" onClick={(e) => { e.preventDefault(); scrollToId("career-hub"); }} className="hover:text-white transition-colors">AI Learning Path</a></li>
+                <li><a href="#faqs" onClick={(e) => { e.preventDefault(); scrollToId("faqs"); }} className="hover:text-white transition-colors">FAQs</a></li>
               </ul>
             </div>
 

@@ -62,12 +62,12 @@ export default function Header({
     ? [{ label: "Workspace Dashboard", href: "#cvkaro-dashboard" }]
     : [
         { label: "Home", href: "#home" },
+        { label: "Career Discovery", href: "#career-discovery" },
         { label: "Features", href: "#features" },
+        { label: "Career Hub", href: "#career-hub" },
         { label: "Pricing", href: "#pricing" },
         { label: "About", href: "#about" },
         { label: "Contact", href: "#contact" },
-        { label: "Career Hub", href: "#career-hub" },
-        { label: "FAQs", href: "#faqs" },
       ];
 
   const handleNavClick = (href: string) => {
@@ -172,9 +172,9 @@ export default function Header({
                 <button
                   onClick={onGetStartedClick}
                   id="btn-get-started"
-                  className="px-5 py-2.5 text-sm font-bold text-navy-dark bg-brand-green hover:brightness-110 rounded-lg shadow-md transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+                  className="px-5 py-2.5 text-sm font-bold text-navy-dark bg-brand-green hover:brightness-110 rounded-lg shadow-md transition-all duration-200 hover:-translate-y-0.5 cursor-pointer whitespace-nowrap"
                 >
-                  Get Started
+                  Start Career Discovery
                 </button>
               )}
             </div>
@@ -191,9 +191,9 @@ export default function Header({
               ) : (
                 <button
                   onClick={onGetStartedClick}
-                  className="px-3 py-1.5 text-xs font-bold text-navy-dark bg-brand-green hover:brightness-110 rounded-md shadow-sm cursor-pointer"
+                  className="px-3 py-1.5 text-xs font-bold text-navy-dark bg-brand-green hover:brightness-110 rounded-md shadow-sm cursor-pointer whitespace-nowrap"
                 >
-                  Get Started
+                  Start Career Discovery
                 </button>
               )}
 
