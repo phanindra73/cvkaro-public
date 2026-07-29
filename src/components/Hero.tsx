@@ -22,9 +22,8 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
           {/* Left Division */}
           <div className="lg:col-span-6 flex flex-col justify-center text-left" id="hero-left-content">
             
-            {/* Elegant brand pill */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-green/10 text-brand-green rounded-full text-xs font-semibold tracking-wide w-fit mb-6 animate-fade-in">
-              <span>AI-Powered Career Discovery</span>
+            <div className="self-center inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-wider text-brand-green uppercase bg-brand-green/10 rounded-full border border-brand-green/20 animate-fade-in">
+              AI-Powered Career Discovery
             </div>
 
             {/* Headline */}
