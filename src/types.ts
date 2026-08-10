@@ -9,7 +9,12 @@ export interface PricingTier {
   id: string;
   name: string;
   priceMonthly: number;
+  priceQuarterly: number;
   priceYearly: number;
+  pricePrefix?: string;
+  priceSuffixMonthly?: string;
+  priceSuffixQuarterly?: string;
+  priceSuffixYearly?: string;
   description: string;
   features: string[];
   isPopular?: boolean;

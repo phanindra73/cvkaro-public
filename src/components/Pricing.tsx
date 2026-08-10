@@ -4,11 +4,11 @@ import { PRICING_TIERS } from "../data";
 import { PricingTier } from "../types";
 
 interface PricingProps {
-  onPlanSelect: (plan: PricingTier, isYearly: boolean) => void;
+  onPlanSelect: (plan: PricingTier, billingCycle: "monthly" | "quarterly" | "yearly") => void;
 }
 
 export default function Pricing({ onPlanSelect }: PricingProps) {
-  const [isYearly, setIsYearly] = useState<boolean>(false);
+  const [billingCycle, setBillingCycle] = useState<"monthly" | "quarterly" | "yearly">("monthly");
   const [selectedPlan, setSelectedPlan] = useState<PricingTier | null>(null);
   const [checkoutComplete, setCheckoutComplete] = useState<boolean>(false);
   const [cardNumber, setCardNumber] = useState<string>("");
@@ -32,16 +32,26 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
 
   const getPriceDisplay = (tier: PricingTier) => {
     if (tier.priceMonthly === 0) return { amount: "₹0", period: "" };
-    const price = isYearly ? tier.priceYearly : tier.priceMonthly;
-    if (tier.id === "tier-campus") {
-      return {
-        amount: `₹${price}`,
-        period: isYearly ? "/ seat / mo, billed yearly" : "/ seat / mo"
-      };
+    
+    let price: number;
+    let period: string;
+    
+    if (billingCycle === "monthly") {
+      price = tier.priceMonthly;
+      period = tier.priceSuffixMonthly || "/ mo";
+    } else if (billingCycle === "quarterly") {
+      price = tier.priceQuarterly;
+      period = tier.priceSuffixQuarterly || " / 3 mos";
+    } else {
+      price = tier.priceYearly;
+      period = tier.priceSuffixYearly || "/ yr";
     }
+
+    const prefix = tier.pricePrefix || "";
+    
     return {
-      amount: `₹${price}`,
-      period: isYearly ? "/ mo, billed yearly" : "/ mo"
+      amount: `${prefix}₹${price.toLocaleString('en-IN')}`,
+      period: period
     };
   };
 
@@ -62,27 +72,42 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
           </p>
 
           {/* Billing Switcher Toggle */}
-          <div className="flex items-center justify-center gap-4 mt-8" id="billing-switcher">
-            <span className={`text-sm font-semibold transition-colors ${!isYearly ? "text-navy-dark font-bold" : "text-text-muted"}`}>
-              Monthly Billing
-            </span>
-            <button
-              onClick={() => setIsYearly(!isYearly)}
-              className="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-navy-dark transition-colors duration-200 ease-in-out focus:outline-hidden"
-              aria-label="Toggle billing interval"
-            >
-              <span
-                className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-brand-green shadow-xs ring-0 transition duration-200 ease-in-out ${
-                  isYearly ? "translate-x-5" : "translate-x-0"
+          <div className="flex justify-center mt-8" id="billing-switcher">
+            <div className="bg-light-bg p-1 rounded-full border border-border-gray inline-flex items-center">
+              <button
+                onClick={() => setBillingCycle("monthly")}
+                className={`px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors ${
+                  billingCycle === "monthly" 
+                    ? "bg-navy-dark text-white shadow-md" 
+                    : "text-text-muted hover:text-navy-dark"
                 }`}
-              />
-            </button>
-            <span className={`text-sm font-semibold transition-colors ${isYearly ? "text-brand-green font-bold" : "text-text-muted"} flex items-center gap-1.5`}>
-              Yearly Billing
-              <span className="bg-brand-green/15 text-brand-green text-[10px] px-2 py-0.5 rounded-full font-bold">
-                Save 30%
-              </span>
-            </span>
+              >
+                Monthly
+              </button>
+              <button
+                onClick={() => setBillingCycle("quarterly")}
+                className={`px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors ${
+                  billingCycle === "quarterly" 
+                    ? "bg-navy-dark text-white shadow-md" 
+                    : "text-text-muted hover:text-navy-dark"
+                }`}
+              >
+                Quarterly
+              </button>
+              <button
+                onClick={() => setBillingCycle("yearly")}
+                className={`px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors flex items-center gap-1.5 ${
+                  billingCycle === "yearly" 
+                    ? "bg-navy-dark text-white shadow-md" 
+                    : "text-text-muted hover:text-navy-dark"
+                }`}
+              >
+                Yearly
+                <span className="bg-brand-green/20 text-brand-green text-[10px] px-2 py-0.5 rounded-full font-bold">
+                  Save
+                </span>
+              </button>
+            </div>
           </div>
         </div>
 
@@ -149,7 +174,7 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
                 <button
                   onClick={() => {
                     setSelectedPlan(tier);
-                    onPlanSelect(tier, isYearly);
+                    onPlanSelect(tier, billingCycle);
                   }}
                   className={`w-full py-3 px-4 rounded-xl font-bold text-sm transition-all duration-300 cursor-pointer mt-auto ${
                     isPro
