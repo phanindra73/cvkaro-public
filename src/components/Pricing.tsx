@@ -31,7 +31,7 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
   };
 
   const getPriceDisplay = (tier: PricingTier) => {
-    if (tier.priceMonthly === 0) return { amount: "₹0", period: "" };
+    if (tier.priceMonthly === 0) return { prefix: "", amount: "₹0", period: "" };
     
     let price: number;
     let period: string;
@@ -50,7 +50,8 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
     const prefix = tier.pricePrefix || "";
     
     return {
-      amount: `${prefix}₹${price.toLocaleString('en-IN')}`,
+      prefix: prefix,
+      amount: `₹${price.toLocaleString('en-IN')}`,
       period: period
     };
   };
@@ -143,13 +144,20 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
                   </p>
 
                   {/* Price display */}
-                  <div className="flex items-baseline gap-1 mb-6 border-b border-border-gray pb-6">
-                    <span className="text-3xl sm:text-4xl font-display font-extrabold text-navy-dark tracking-tight">
-                      {priceInfo.amount}
-                    </span>
-                    <span className="text-xs text-text-muted font-medium">
-                      {priceInfo.period}
-                    </span>
+                  <div className="flex flex-col mb-6 border-b border-border-gray pb-6">
+                    {priceInfo.prefix && (
+                      <span className="text-xs text-text-muted font-semibold mb-1">
+                        {priceInfo.prefix}
+                      </span>
+                    )}
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-3xl sm:text-4xl font-display font-extrabold text-navy-dark tracking-tight">
+                        {priceInfo.amount}
+                      </span>
+                      <span className="text-xs text-text-muted font-medium">
+                        {priceInfo.period}
+                      </span>
+                    </div>
                   </div>
 
                   {/* Features List */}
@@ -219,7 +227,7 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
                 Subscribe to {selectedPlan.name}
               </h4>
               <p className="text-xs text-white/70 mt-1">
-                Amount due: <span className="text-brand-green font-bold text-sm">{getPriceDisplay(selectedPlan).amount}</span> {getPriceDisplay(selectedPlan).period}
+                Amount due: <span className="text-brand-green font-bold text-sm">{getPriceDisplay(selectedPlan).prefix}{getPriceDisplay(selectedPlan).amount}</span> {getPriceDisplay(selectedPlan).period}
               </p>
             </div>
 
