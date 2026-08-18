@@ -119,7 +119,7 @@ export const PRICING_TIERS: PricingTier[] = [
   },
   {
     id: "tier-growth",
-    name: "CAREER GROWTH",
+    name: "Career Growth",
     priceMonthly: 299,
     priceQuarterly: 799,
     priceYearly: 2499,
@@ -140,7 +140,7 @@ export const PRICING_TIERS: PricingTier[] = [
   },
   {
     id: "tier-readiness",
-    name: "CAREER READINESS PACKAGE",
+    name: "Career Readiness Package",
     priceMonthly: 1499,
     priceQuarterly: 1499,
     priceYearly: 1499,
@@ -166,7 +166,7 @@ export const PRICING_TIERS: PricingTier[] = [
   },
   {
     id: "tier-campus",
-    name: "CAMPUS / INSTITUTION",
+    name: "Campus / Institution",
     priceMonthly: 199,
     priceQuarterly: 549,
     priceYearly: 1499,

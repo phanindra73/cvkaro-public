@@ -135,7 +135,7 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
                 )}
 
                 <div>
-                  <div className="min-h-[180px] flex flex-col">
+                  <div className="h-[220px] flex flex-col">
                     {/* Plan Name */}
                     <h4 className="font-display font-bold text-xl text-navy-dark mb-2">
                       {tier.name}
