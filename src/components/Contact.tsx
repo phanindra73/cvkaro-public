@@ -91,8 +91,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-xs font-bold text-navy-dark uppercase tracking-wider">General & Support</div>
-                    <a href="mailto:hello@cvkaro.com" className="text-sm text-text-muted hover:text-brand-green transition-colors font-medium">
-                      hello@cvkaro.com
+                    <a href="mailto:info@cvkaro.com" className="text-sm text-text-muted hover:text-brand-green transition-colors font-medium">
+                      info@cvkaro.com
                     </a>
                   </div>
                 </div>
