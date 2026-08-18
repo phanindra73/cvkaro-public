@@ -19,6 +19,7 @@ export interface PricingTier {
   features: string[];
   isPopular?: boolean;
   ctaText: string;
+  noteText?: string;
 }
 
 export interface BlogArticle {

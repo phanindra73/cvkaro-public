@@ -181,19 +181,26 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
                 </div>
 
                 {/* Call to action */}
-                <button
-                  onClick={() => {
-                    setSelectedPlan(tier);
-                    onPlanSelect(tier, billingCycle);
-                  }}
-                  className={`w-full py-3 px-4 rounded-xl font-bold text-sm transition-all duration-300 cursor-pointer mt-auto ${
-                    isPro
-                      ? "bg-brand-green text-navy-dark hover:brightness-110 shadow-lg shadow-brand-green/20"
-                      : "bg-light-bg text-navy-dark border border-border-gray hover:bg-border-gray/35 hover:border-text-muted/30"
-                  }`}
-                >
-                  {tier.ctaText}
-                </button>
+                <div className="mt-auto w-full">
+                  <button
+                    onClick={() => {
+                      setSelectedPlan(tier);
+                      onPlanSelect(tier, billingCycle);
+                    }}
+                    className={`w-full py-3 px-4 rounded-xl font-bold text-sm transition-all duration-300 cursor-pointer ${
+                      isPro
+                        ? "bg-brand-green text-navy-dark hover:brightness-110 shadow-lg shadow-brand-green/20"
+                        : "bg-light-bg text-navy-dark border border-border-gray hover:bg-border-gray/35 hover:border-text-muted/30"
+                    }`}
+                  >
+                    {tier.ctaText}
+                  </button>
+                  {tier.noteText && (
+                    <p className="text-center text-[10px] text-text-muted mt-2 font-medium">
+                      {tier.noteText}
+                    </p>
+                  )}
+                </div>
               </div>
             );
           })}
