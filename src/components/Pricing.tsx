@@ -135,33 +135,35 @@ export default function Pricing({ onPlanSelect }: PricingProps) {
                 )}
 
                 <div>
-                  {/* Plan Name */}
-                  <h4 className="font-display font-bold text-xl text-navy-dark mb-2">
-                    {tier.name}
-                  </h4>
-                  <p className="text-xs text-text-muted min-h-8 mb-5">
-                    {tier.description}
-                  </p>
+                  <div className="min-h-[180px] flex flex-col">
+                    {/* Plan Name */}
+                    <h4 className="font-display font-bold text-xl text-navy-dark mb-2">
+                      {tier.name}
+                    </h4>
+                    <p className="text-xs text-text-muted mb-5 grow">
+                      {tier.description}
+                    </p>
 
-                  {/* Price display */}
-                  <div className="flex flex-col mb-6 border-b border-border-gray pb-6">
-                    {priceInfo.prefix && (
-                      <span className="text-xs text-text-muted font-semibold mb-1">
-                        {priceInfo.prefix}
-                      </span>
-                    )}
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-3xl sm:text-4xl font-display font-extrabold text-navy-dark tracking-tight">
-                        {priceInfo.amount}
-                      </span>
-                      <span className="text-xs text-text-muted font-medium">
-                        {priceInfo.period}
-                      </span>
+                    {/* Price display */}
+                    <div className="flex flex-col border-b border-border-gray pb-6 min-h-[100px] justify-end">
+                      {priceInfo.prefix && (
+                        <span className="text-xs text-text-muted font-semibold mb-1">
+                          {priceInfo.prefix}
+                        </span>
+                      )}
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-3xl sm:text-4xl font-display font-extrabold text-navy-dark tracking-tight">
+                          {priceInfo.amount}
+                        </span>
+                        <span className="text-xs text-text-muted font-medium">
+                          {priceInfo.period}
+                        </span>
+                      </div>
                     </div>
                   </div>
 
                   {/* Features List */}
-                  <ul className="space-y-3.5 mb-8">
+                  <ul className="space-y-3.5 mb-8 mt-6">
                     {tier.features.map((feature, i) => {
                       const icon = <Check className="h-4 w-4 text-brand-green shrink-0 mt-0.5" />;
                       const textClass = "text-text-primary font-medium leading-relaxed";
